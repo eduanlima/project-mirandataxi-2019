@@ -1,0 +1,151 @@
+@charset "UTF-8";
+html, body{
+	height: 100%;
+	min-height: 100%;
+}
+/*A style sheet for service-hire*/
+
+#page{
+	/*height: 100%;*/
+	text-align: center;
+}
+
+#li-register{
+	background-color: #CC3300;
+}
+
+article[role=main]{
+	width: 950px;
+	height: 70%;
+	padding-top: 8%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: red;
+}
+
+article[role=main] h1{
+	font-family: 'source_sans_proregular';
+	font-size: 240%;
+	margin-bottom: 3%;
+	color: #FF6600;
+}
+
+article[role=main] .lbl-sex{
+	font-family: 'source_sans_prolight'; 
+	font-size: 170%;
+	color: #000000;	
+}
+
+article[role=main] label[for=radio-female]{
+	margin-right: 8%;
+}
+
+article[role=main] .lbl-standard{
+	font-family: 'source_sans_proregular';
+	font-size: 200%;
+	width: 100%;
+	margin-top: 1%;
+	color: #000000;
+	display: inline-block;
+}
+
+article[role="main"] .txt{
+	font-family: 'source_sans_prolight'; 
+	font-size: 170%;
+	width: 100%;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0px 0px 1px 0px;
+	border-color: #000000;
+	background-color: transparent;
+	outline-color: #8B8989;
+}
+
+article[role=main] label.lbl-phone{
+	font-family: 'source_sans_proitalic'; 
+	font-size: 90%;
+	color: #000000;
+}
+
+article[role=main] div#div-name{
+	width: 66%;
+	margin-right: 2%;
+	text-align: left;
+	float: left;
+}
+
+article[role=main] div#div-sex{
+	width: 32%;
+	text-align: left;
+	float: left;
+}
+
+article[role=main] label#lbl-sex-main{
+	margin-bottom: 3.5%;
+}
+
+article[role=main] div#div-phone-lbl{
+	width: 100%;
+	text-align: left;
+}
+
+article[role=main] div.div-phone{
+	width: 32%;
+	text-align: left;
+	float: left;
+}
+
+article[role=main] div#div-space-phone{
+	margin-left: 2%;
+}
+
+article[role=main] div#div-email{
+	width: 100%;
+	text-align: left;
+}
+
+article[role=main] div.div-pass{
+	width: 49%;
+	float: left;
+	text-align: left;
+}
+
+article[role=main] div#div-space-pass{
+	margin-right: 2%;
+}
+
+.div-phone input[type=radio]{
+	width: 12px;
+	height: 12px;
+	outline: 1px solid #000000;
+	border: 2px solid #FFFFFF;
+}
+
+#btt-finish{
+	font-family: 'source_sans_proregular';
+	text-transform: uppercase;
+	font-size: 150%;
+	vertical-align: baseline;
+	color: #FFFFFF;
+	width: 220px;
+	margin-top: 4%;
+	height:40px;
+	border: none;
+	background-color: #363636;
+	cursor: pointer;
+	padding-top: 5px;
+	padding-left: 7px;
+}
+
+#btt-finish img{
+	padding-bottom: 12px;
+	height: 20px;
+	margin-left: 10px;
+	vertical-align: middle;
+} 
+
+#btt-finish:hover{
+	background-color: #000000;
+}

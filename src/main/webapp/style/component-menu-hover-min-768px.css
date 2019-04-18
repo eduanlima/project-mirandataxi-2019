@@ -1,0 +1,30 @@
+/*Style for menu hover where min-width will 768px*/
+@media only screen and (min-width: 768px){
+	/*Defining a new color where mouse hover li*/
+	#bar-menu-main nav ul #li-hire:hover{
+		background-color: #000000;
+	}
+	
+	#bar-menu-main nav ul #li-services:hover{
+		background-color: #000000;
+	}
+	
+	#bar-menu-main nav ul #li-contact:hover{
+		background-color: #000000;
+	}
+	
+        /*
+	.sub-menu:hover .ul-access{
+		display: block;
+	}*/
+	
+	#link-access-in:hover{
+		background-color: #FFFFFF; 
+		color: #000000;
+	}
+	
+	.link-access:hover {
+		border-color: #FFFFFF;
+	}
+}
+/*li.sub-menu*/

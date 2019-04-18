@@ -1,0 +1,650 @@
+@charset "UTF-8";
+html, body{
+    height: 100%;
+    min-height: 100%;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*A style sheet for service-hire*/
+#page{
+    /*height: 100%;*/
+    text-align: center;
+}
+#galeria{
+    width: 920px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+#li-hire{
+    background-color: #CC3300;
+}
+
+#slides{
+    width: 920px;    
+    padding-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    height: 548px;
+}
+#slides ul li{
+    width: 920px !important;
+    float:left;
+}
+
+#slides ul li img{
+    width: 92% !important;
+    height:100%;
+}
+#mini-galeria{
+    width: 70%;
+    margin:0px auto;
+}
+#mini-galeria nav, #mini-galeria nav #nav-mini{
+    width: 100%;
+    padding:0;
+}
+#mini-galeria nav #nav-mini .mini-pics:first-child{
+    margin-left:10%;
+}
+#mini-galeria nav #nav-mini .mini-pics{
+    width:15%;
+    padding:5px 0;    
+    display: block;
+    float:left;
+    margin: 15px 1%;
+    transition:0.5s;
+    -webkit-transition:0.5s;     
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+#mini-galeria nav #nav-mini .mini-pics:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;    
+}
+#mini-galeria nav #nav-mini .mini-pics:hover a span{color:#ff6600;}
+
+#mini-galeria nav #nav-mini .mini-pics #pic_one:hover{
+    background: url('img/cars/mercedes-class-e250-max.png');
+}
+#mini-galeria nav ul li a{ width:100%; text-align: center; text-decoration: none; }
+#mini-galeria nav #nav-mini .mini-pics a > img{ 
+    width:100%;
+    display: block;
+    margin: 2px auto;
+}
+#mini-galeria nav #nav-mini .mini-pics a span{
+    font-family: 'source_sans_prolight';
+    font-size: 1.0em;
+    color: #000000;
+    font-weight: bold;
+    padding: 3px;
+}
+#mini-galeria nav #nav-mini .mini-pics a span:hover{
+    color:#FF6600;
+}
+#mini-galeria nav #nav-mini .mini-pics a .sub_info{
+    display: none;
+}
+.showIt{
+    display: block !important;
+}
+.inact:hover{
+
+}
+.act{
+    opacity: 1;
+    background: #fff;
+    box-shadow: 0px 0px 25px 10px #ccc;
+}
+.unshielded{
+    color:#c10000 !important;
+    border:1px solid !important;
+    background:#fff !important;
+}
+
+.info-class p{
+    font-family: 'source_sans_proregular';
+    font-size: 1.2em;
+    color: #000;
+    border:1px solid;
+    padding: 0.5%;
+    width: 20%;
+    margin-left:40%;
+    margin-top: 1%;
+}
+
+.info-class h1{
+    font-family: 'source_sans_proregular'; 
+    color: #FF6600;
+    font-size: 350%;
+    text-align:center;
+    width: 100%;
+}
+
+.info-class h2{
+    font-family: 'source_sans_prolight';
+    color: #000000;
+    font-size: 220%;
+    width: 100%;
+}
+
+.info-class span{
+    width: 100%;
+}
+
+.info-class h3{
+    background-image: url(../img/icons/label-price.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'source_sans_probold';
+    font-size: 80%;
+    text-align: center;
+    color: #FFFFFF;
+    width: 20%;
+    height: 20px;
+    margin-right: 1%;
+    padding-right: 1%;
+    padding-top: 6px;
+    display: inline-block;
+}
+
+.info-class h4{
+    font-family: 'source_sans_proregular';
+    font-size: 90%;
+    text-align: left;
+    color: #000000;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.info-class h4#desc-end{
+    margin-left: 1%;
+    padding-left: 1%;
+    border-style: solid;
+    border-left-width: 1px;
+    border-color: #000000;
+}
+
+#prev{	
+    width: 40px;
+    height: 80px;
+    vertical-align: top;
+    background-image: url(../img/icons/previous-maximum.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left:-38%;
+    margin-top:162px;
+}
+
+#next{
+    width: 40px;
+    height: 80px;
+    vertical-align: top;	
+    background-image: url(../img/icons/next-maximum.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 14%;
+    margin-top: -394px;
+}
+
+#prev:hover{
+    background-image: url(../img/icons/previous-maximum-black.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#next:hover{
+    background-image: url(../img/icons/next-maximum-black.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#form-btt-register{
+    display: block;
+    width: 260px;
+    margin:10px auto;
+}
+
+#btt-confirm{
+    font-family: 'source_sans_proregular';
+    text-transform: uppercase;
+    font-size: 1.4em;
+    vertical-align: baseline;
+    color: #FFFFFF;    
+    border: none;
+    background-color: #363636;
+    cursor: pointer;
+    padding: 7px 15px;
+    outline-color: #8B8989;
+    margin: 0px auto;
+}
+
+#btt-confirm img{
+    padding-bottom: 8px;
+    height: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+} 
+
+#btt-confirm:hover{
+    background-color: #000000;
+}
+
+#modal-not-user{
+    position: absolute;
+    z-index: 999;
+    width: 40%;
+    left: 30%;
+    top: 30%;
+    background: rgba(0,0,0,0.8);
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    display: none;
+    padding: 5px 0px;
+}
+
+.div-not-user{
+    width: 50%;
+    height: 140px;
+    display: inline-block;
+    float: left;
+}
+
+#div-close-not-user{
+    width: 30px;
+    height: 30px;
+    margin-left: 92.5%; 
+}
+
+#div-close-not-user img{
+    width: 28px;
+    height: 28px;   
+    padding: 6px;    
+    cursor: pointer;
+    transition:0.3s all;
+    -o-transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+}
+#div-close-not-user:hover{
+    background: #CCCCCC;
+}
+.h-not-user{
+    font-family: 'source_sans_prolight';
+    color: #FFFFFF;
+    font-size: 25px; 
+    margin-top: 8px;	
+}
+
+.btt-not-user{
+    font-family: 'source_sans_proregular';
+    color: #FFFFFF;
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    padding: 5px 10px;
+    transition:0.3s all;
+    -o-transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+}
+
+#btt-access{ margin-top: 0px; }
+
+#btt-register{
+    margin-top: 8px;
+}
+
+.btt-not-user:hover{
+    background-color: #FFFFFF;
+    color:#000;
+}
+.form-btt-register{
+    padding:0; 
+    margin:10px;
+}
+.form-btt-register .mini_btt{
+    width: 100%;
+    background: #000;
+    font-family: 'source_sans_proregular';
+    font-size: 1.5em;
+    color: #eaeaea;
+    height: 40px;
+    border: none;
+}
+.form-btt-register .mini_btt img{
+    width: 3%;
+    margin-top: 2px;
+    position: absolute;
+    margin-left: 15px;
+}
+
+#black-page{
+    display: none;
+}
+
+#white-page{
+    display: none;
+}
+
+.price-title{ 
+    font-family: 'source_sans_proregular';
+    background: #323232;
+    color: #fff;
+    padding: 5px 0px;
+    width: 96%;
+    margin: auto;
+    font-size: 1.4em;
+}
+.sub_info .desc-end{ font-family: 'source_sans_proregular'; color: #000;}
+.class-car{ font-family: 'source_sans_proregular'; }
+.mini-price{ font-family: 'source_sans_proregular'; }
+
+.mini-pics .sub_info .info-car{
+    font-family: 'source_sans_proregular';
+    color:#000;
+    border:1px solid #000;
+}
+
+/*RESPONSIVO STYLE*/
+@media screen and (max-width: 310px){
+    .h-not-user{ font-size:22px; }
+    .btt-not-user{
+        text-transform: initial;
+        padding:2px;
+    }
+    #div-close-not-user img{
+        margin-top: -21px;
+        margin-left: -16px;
+        width:30px;
+        height:30px;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a span{
+        font-size:2.5em;
+    }
+}
+@media screen and (max-width: 479px){
+    #galeria{width:100%;}
+    #prev, #next,#slides{
+        display: none !important;
+    }
+    #mini-galeria{
+        width:80%;   
+    }
+    #mini-galeria nav #nav-mini .mini-pics{
+        width: 100%;
+        padding: 10px;
+        margin-left: 0 !important;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info{
+        background: #fff;
+        padding: 5px 0;
+        margin-top: -5px;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info h2, 
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info p{
+        color: #000;
+        font-size: 1.2em;
+        font-family: source_sans_proregular;
+        margin: 10px auto;
+        width: 96%;
+        padding: 5px;
+    }
+    .mini-price{        
+        font-size: 1.3em;
+        color: #000;
+    }
+    .car-name{
+        font-size:18px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    .class-car{        
+        font-size: 19px; 
+        margin-top: 5px;
+    }
+    .car-name{padding:0px;}
+    .price-title{        
+        padding: 2px 0px;
+        margin-top: 0px;
+        font-size:20px;
+        background:#20201f;
+        color: #fff;
+    }
+    .info-car{ margin: 0px;}
+    #modal-not-user{
+        width: 80%;
+        left: 10%;
+        top: 15%;
+    }
+    #box-acessar{
+        border-bottom: 1px dotted #ccc;        
+    }
+    #div-close-not-user img{
+        margin-top: -21px;
+        margin-left: -14px;
+    }
+    .h-not-user:last-child{ margin-top:15px; }
+    #btt-access { margin-top: -15px; }    
+    #btt-register { margin-top: -8px; /*btt cadastrar*/}
+    .form-btt-register #btt-confirm{ display: none; }
+    #form-btt-register{display: none;}
+    #mini-galeria nav #nav-mini .mini-pics a span{
+        font-size:2.5em;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:599px){
+    #galeria{width:100%; height: auto;}
+    #prev, #next,#slides{
+        display: none !important;
+    }
+    .mini-pics a .car-name{
+        font-size:2em;
+    }
+    #mini-galeria{
+        width:60%;  
+        background: #00CD66;
+    }
+    #mini-galeria nav #nav-mini .mini-pics{
+        width: 100%;
+        padding: 10px;
+        margin-left: 0 !important;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info{
+        background: #fff;
+        padding: 5px 0;
+        margin-top: -5px;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info h2, 
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info p{
+        color: #000;
+        font-size: 1.2em;
+        font-family: source_sans_proregular;
+        margin: 10px auto;
+        width: 96%;
+        padding: 5px;
+    }
+    .form-btt-register #btt-confirm{ display: none; }
+    #form-btt-register{display: none;}
+
+    #modal-not-user {    
+        width: 80%;    
+        left: 10%;
+        top:15%;
+    }
+    #box-acessar{
+        border-bottom: 1px dotted #ccc;        
+    }
+    #div-close-not-user img{
+        margin-top:-25px;
+        margin-left:-8px;
+    }
+    .h-not-user:last-child{ margin-top:15px; }
+    .price-title{
+        font-size:19px; 
+        margin-top:0px; 
+    }
+    .mini-price{        
+        font-size: 1.3em;
+        color: #000;
+    }
+    .sub_info .desc-end{ margin-bottom:0px; }
+    #mini-galeria nav #nav-mini .mini-pics a span{
+        font-size:2.5em;
+    }
+}
+@media screen and (min-width:600px) and (max-width:719px){
+    #galeria{width:100%; height: auto;}
+    #prev, #next,#slides{
+        display: none !important;
+    }
+    .mini-pics a .car-name{
+        font-size:2em;
+    }
+    #mini-galeria{
+        width:60%;  
+        background: #00CD66;
+    }
+    #mini-galeria nav #nav-mini .mini-pics{
+        width:100%;
+        padding:10px;
+        margin-left:0 !important;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info{
+        background:#fff;
+        padding:5px 0;
+        margin-top:-5px;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info h2, 
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info p{
+        color: #000;
+        font-size: 1.2em;
+        font-family: source_sans_proregular;
+        margin: 10px auto;
+        width: 96%;
+        padding: 5px;
+    }
+    .form-btt-register #btt-confirm{ display: none; }
+    #form-btt-register{display: none;}
+
+    #modal-not-user {    
+        width: 80%;    
+        left: 10%;
+        top:15%;
+    }
+    .form-btt-register .mini_btt{
+        margin-left:0px;
+    }
+    .form-btt-register .mini_btt img{
+        width: 17px;
+        margin-top: 1px;
+    }
+    #box-acessar{
+        border-bottom: 1px dotted #ccc;        
+    }    
+    .h-not-user:last-child{ margin-top:15px; }
+    .mini-price{
+        font-size: 1.3em;
+        color: #000;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a span{
+        font-size:2.5em;
+    }
+}
+
+@media screen and (min-width:720px) and (max-width:992px){
+    #galeria{width:100%; height: auto;}
+    #prev, #next,#slides{
+        display: none !important;
+    }
+    .mini-pics a .car-name{
+        font-size:2em;
+    }
+    #mini-galeria{
+        width:60%;  
+        background: #00CD66;
+    }
+    #mini-galeria nav #nav-mini .mini-pics{
+        width: 100%;
+        padding: 10px;
+        margin-left: 0 !important;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info{
+        background: #fff;
+        padding: 5px 0;
+        margin-top: -5px;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info h2, 
+    #mini-galeria nav #nav-mini .mini-pics a .sub_info p{
+        color: #000;
+        font-size: 1.2em;
+        font-family: source_sans_proregular;
+        margin: 10px auto;
+        width: 96%;
+        padding:5px;
+    }
+    .info-car{
+        font-size:1.2em;
+    }
+    .form-btt-register #btt-confirm{ display: none; }
+    #form-btt-register{display: none;}
+
+    #modal-not-user {    
+        width: 60%;    
+        left: 20%;
+    }
+    .form-btt-register .mini_btt{
+        margin-left:0px;
+    }
+    .form-btt-register .mini_btt img{
+        width: 17px;
+        margin-top: 1px;
+    }
+    #box-acessar{border-bottom: 1px dotted #f18844;}
+    .mini-price{        
+        font-size: 1.3em;
+        color: #000;
+    }
+    #mini-galeria nav #nav-mini .mini-pics a span{
+        font-size:2.5em;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1366px){
+    #div-close-not-user img{/*margin-top:-27px; margin-left:-6px;*/}
+    #btt-register{margin-top:0px;}
+
+    .btt-not-user{ font-size:20px; }
+    .h-not-user{ font-size:23px;}
+
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+    #prev{
+        margin-left:-45%;
+    }
+}
+

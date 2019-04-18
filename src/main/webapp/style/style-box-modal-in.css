@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+#box-modal{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 35%;
+    z-index: 999;
+    width: 25%;  
+    background: rgba(9,9,9,9);
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    display: none;
+    padding: 17px 0px;
+    border: 2px solid #fff;
+}
+
+.txt-in{
+    font-family: 'source_sans_prolight'; 
+    width: 80% !important;
+    background-color: transparent !important; 
+    margin-left: auto;
+    margin-right: auto;
+    color:#fff !important;
+}
+#txt-email-in{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#h-alert{
+    font-family: 'source_sans_proregular';
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    visibility: hidden;
+}
+
+#h-alert img{
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    margin-right: 5px;
+}
+
+#btt-go{
+    font-family: 'source_sans_proregular';
+    color: #FFFFFF;
+    font-size: 30px;
+    width: 50%;    
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: transparent;
+    outline-color: #8B8989;
+    transition:0.3s all;
+}
+#btt-go:hover{
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+#re-password{
+    font-family: 'source_sans_proregular';
+    font-size: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#div-close{
+   position: absolute;
+    margin-top: -25px;    
+    padding: 1px 5px 5px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 4px;   
+    right: 0px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+#div-close:hover{ background:#333}
+#div-close img{
+    width: 13px;
+    height: 13px;
+}
+@media screen and (max-width:599px){
+    #box-modal{
+        width: 70%;
+        left: 15%;
+        top:15%;
+    }
+    #btt-go{
+        font-size: 22px;
+        width: 40%;
+        border-radius:3px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:719px){
+    #box-modal{
+        width: 50%;
+        left: 25%;
+        top:15%;
+    }
+    #btt-go{
+        font-size: 25px;
+        width: 40%;
+    }
+}
+@media screen and (min-width:720px) and (max-width:992px){
+    #box-modal{
+        width: 50%;
+        left: 25%;
+        top:15%;
+    }
+    #btt-go{
+        font-size: 25px;
+        width: 40%;
+    }
+}

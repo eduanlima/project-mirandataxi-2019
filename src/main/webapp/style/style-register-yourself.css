@@ -1,0 +1,97 @@
+@charset "UTF-8";
+html, body{
+	height: 100%;
+	min-height: 100%;
+}
+/*A style sheet for service-hire*/
+
+#page{
+	/*height: 100%;*/
+	text-align: center;
+}
+
+#li-register{
+	background-color: #CC3300;
+}
+article[role=main] h1{
+	font-family: 'source_sans_proregular';
+	font-size: 240%;
+	color: #FF6600;
+}
+
+.lbl-sex{
+    font-family: 'source_sans_prolight'; 
+    font-size: 150%;
+    color: #000000;	
+}
+
+label[for=radio-female]{
+    margin-right: 8%;
+}
+
+.lbl-standard{
+    font-family: 'source_sans_proregular';
+    font-size: 1.5em;
+    width: 100%;
+    margin-top: 2%;
+    color: #000000;
+    display: inline-block;
+    text-align: left;
+}
+
+.txt{
+    font-family: 'source_sans_prolight'; 
+    font-size: 170%;
+    width: 100%;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #000000;
+    background-color: transparent;
+    outline-color: #8B8989;
+}
+.box-btt{
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: left;
+}
+#btt-finish{
+    font-family: 'source_sans_proregular';
+    text-transform: uppercase;
+    font-size: 150%;
+    vertical-align: baseline;
+    color: #FFFFFF;
+    width: 25%;
+    margin-left:15px;
+    margin-top: 15px;
+    height:40px;
+    border: none;
+    background-color: #363636;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-left: 7px;
+}
+
+#btt-finish img{
+    padding-bottom: 10px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+} 
+
+#btt-finish:hover{
+    background-color: #000000;
+}
+
+#black-page{
+    display: none;
+}
+
+@media only screen and (max-width:462px){
+    .title-main{font-size: 1.7em;}
+    .lbl-standard{ font-size: 1.2em;}
+    
+    #btt-finish{
+        width:90%;     
+        margin-left: 17px;
+    }
+}

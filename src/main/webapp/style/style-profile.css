@@ -1,0 +1,113 @@
+#page-update{
+    width: 100%; 
+    text-align: center;
+}
+#page-update .title-main{
+    color: #707070;
+    font-family: 'source_sans_probold';
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 58px;
+}
+.forms{
+    border-bottom: 1px solid #8B8989;
+    /* border-radius: 5px; */
+    margin-bottom: 15px;
+    padding: 15px;
+}
+#form-update{
+    width: 100%;    
+}
+#li-register{
+    background-color: #CC3300;
+}    
+.lbl-sex{
+    font-family: 'source_sans_prolight'; 
+    font-size: 150%;
+    color: #000000;	
+}
+label[for=radio-female]{
+    margin-right: 8%;
+}
+.lbl-standard{
+    font-family: 'source_sans_proregular';
+    font-size: 1.5em;
+    width: 100%;
+    margin-top: 2%;
+    color: #000000;
+    display: inline-block;
+    text-align: left;
+}
+.txt{
+    font-family: 'source_sans_prolight'; 
+    font-size: 170%;
+    width: 100%;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #000000;
+    background-color: transparent;
+    outline-color: #8B8989;
+}
+.box-btt{
+    width: 100%;
+    text-align: left;
+}
+.btn-update{
+    font-family: 'source_sans_proregular';
+    text-transform: uppercase;
+    font-size: 150%;   
+    margin-left:15px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none !important;
+}
+.btn-update#btt-update-pwd{ display: none; }
+#btt-update img{
+    padding-bottom: 10px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+} 
+#black-page{
+    display: none;
+}
+.alerta-msg{
+    width: 100%;
+    padding:5px;
+    text-align: center;
+    display: none;
+    color:#fff;
+    font-size: 1.3em;
+    border-color:#fff;
+    margin-top: 10px;
+}
+.alerta-success{
+    background-image: -webkit-linear-gradient(top, #71d647 0%, #3f9b18 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#71d647), to(#3f9b18));
+    background-image: linear-gradient(to bottom, #71d647 0%, #3f9b18 100%);
+   
+    display: block;
+}
+.alerta-error{
+    background-image: -webkit-linear-gradient(top,#d82121 0%, #6d0f0f 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d82121), to(#6d0f0f));
+    background-image: linear-gradient(to bottom, #d82121 0%, #6d0f0f 100%);
+    display: block;
+}
+
+@media only screen and (max-width:462px){
+    .title-main{font-size: 1.7em;}
+    .lbl-standard{ font-size: 1.2em;}
+
+    #btt-finish{
+        width:90%;     
+        margin-left: 17px;
+    }
+}
+@media (max-width: 630px){
+    #page-update .title-main{
+        font-size: 1.2em !important;
+        line-height: normal !important;
+    }
+}

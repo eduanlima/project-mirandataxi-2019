@@ -1,0 +1,23 @@
+/*Style for menu hover where max-width will 767px*/
+@media only screen and (max-width: 767px){
+	/*Defining a new image where mouse hover min-menu*/
+	#min-menu:hover{
+		background-image: url(../img/icons/menu-mobile-black.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	
+	/*Defining a new color where mouse active li*/
+	#bar-menu-main nav ul li.sub-menu:active{
+		border-bottom-color: #FFFFFF;
+		border-right-color: #FFFFFF;
+		border-left-color: #FFFFFF;
+	}
+	
+	/*Defining a new color where mouse hover li*/
+	#bar-menu-main nav ul li.sub-menu:hover{
+		border-bottom-color: #FFFFFF;
+		border-right-color: #FFFFFF;
+		border-left-color: #FFFFFF;
+	}	
+}
