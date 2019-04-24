@@ -6,6 +6,7 @@ html, body{
     min-height: 100%;
     background-color: #000000;
 }
+.navbar-toggle{ border-radius: 0px !important;}
 #page{
     overflow: hidden;
     /*text-align: center;*/
@@ -41,6 +42,7 @@ html, body{
 #page #contorno-content .brand-index img{
     width:190px;
 }
+#page #contorno-content .brand-index img{ width: 50%; }
 #page #contorno-content .title-index{
     font-family: 'source_sans_probold';
     color:#fff;
@@ -83,7 +85,7 @@ video{
         font-size: 1.3em;
     }
     #videoprincipal{ width: 1102px; }
-    #page #contorno-content .brand-index img{ width: 30%; }
+    #page #contorno-content .brand-index img{ width: 50%; }
     #page #contorno-content .content-index{ font-size: 1.2em; }
 }
 @media screen and (max-width:339px){

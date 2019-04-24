@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"/> 
         <link rel="stylesheet" media="screen" href="style/fonts.css" />
         <link rel="stylesheet" media="screen" href="style/driver.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
         <title>Motorista Login</title>
     </head>
     <body>

@@ -11,7 +11,8 @@
         <link rel="stylesheet" media="screen" href="style/style-menu-main.css" />
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"/>   
-        <link rel="stylesheet" media="screen" href="style/style-box-modal-recover.css" />        
+        <link rel="stylesheet" media="screen" href="style/style-box-modal-recover.css" />  
+        <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
         <style>
             .menu-register-service{background:#565656; }
         </style>

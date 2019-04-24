@@ -14,6 +14,7 @@
         <link rel="stylesheet" media="screen" href="js/jquery-ui-1.12.1/jquery-ui.theme.css"/>
         <link rel="stylesheet" media="screen" href="style/style-register-service.css" />
         <link rel="stylesheet" media="screen" href="style/style-box-modal-recover.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
         <!--BOOTSTRAP-->
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"/>
@@ -153,11 +154,9 @@
                                         </div>                                    
                                         <label id="lbl-text-legal-to" class="legal-text lbl-right">Apenas <label id="lbl-to-uf" class="label-standard label-one lbl-text-trip">SP</label> Para cidades de outro estado, envie-nos um e-mail.</label>
                                     </fieldset>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <label for="termosaceite" id="boxtermosaceite">
-                                            <input type="checkbox" name="termosaceite" id="termosaceite" required/> Li e aceito os <a href="#modaltermos" data-toggle="modal">termos</a>
-                                        </label>
-                                    </div>
+                                    <label for="termosaceite" id="boxtermosaceite">
+                                        <input type="checkbox" name="termosaceite" id="termosaceite" required/> Li e aceito os <a href="#modaltermos" data-toggle="modal">termos</a>
+                                    </label>                                    
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
@@ -355,7 +354,7 @@
                 $('#txt-date').datepicker({                    
                     dateFormat: "dd/mm/yy",                
                     numberOfMonths: 1,
-                    minDate: 1,
+                    minDate: 2,
                     monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
                     monthNamesShort: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
                     dayNames: ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],

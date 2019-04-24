@@ -42,14 +42,14 @@
             </div>     
             <div class="row nopadding">
                 <div class="box-btt">
-                    <button id="btt-update" type="submit" name="nBttUpdate" class="btn btn-warning btn-update">Atualizar</button>
+                    <button id="btt-update" type="submit" name="nBttUpdate" class="btn-update">Atualizar</button>
                 </div>
             </div>        
             <div class="row">
                 <span class="alerta-msg"></span>                        
             </div>
         </form>
-            
+        <div class="line"></div>      
         <form id="up-password" class="forms">
             <div class="row nopadding">
                 <div class="col-lg-4 col-md-6 col-sm-6">
@@ -68,10 +68,10 @@
             </div>
             <div class="row nopadding">
                 <div class="box-btt">
-                    <button id="btt-cfm-pwd" type="button" name="nBttConfirm" class="btn btn-warning btn-update">Confirmar senha</button>
+                    <button id="btt-cfm-pwd" type="button" name="nBttConfirm" class="btn-update">Confirmar senha</button>
                 </div>
                 <div class="box-btt">
-                    <button id="btt-update-pwd" type="submit" name="nBttUpdate" class="btn btn-warning btn-update">Atualizar</button>
+                    <button id="btt-update-pwd" type="submit" name="nBttUpdate" class="btn-update">Atualizar</button>
                 </div>
             </div> 
             <div class="row">

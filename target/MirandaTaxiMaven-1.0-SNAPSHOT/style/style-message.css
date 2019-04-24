@@ -29,8 +29,8 @@
     font-size: 1.3em;
     margin-bottom: 15px;
 }
-
-#btt-ok{
+#btn-redirect{ display: none; }
+#btt-ok, #btn-redirect button{
     font-family: 'source_sans_proregular';
     color: #FFFFFF;
     font-size: 1.3em;
@@ -49,7 +49,7 @@
     -o-transition: 0.3s all;
     border-radius: unset;
 }
-#btt-ok:hover{
+#btt-ok:hover, #btn-redirect button:hover{
     background-color: #ffffff;
     color:#000;
 }

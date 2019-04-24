@@ -21,6 +21,7 @@
         <link rel="stylesheet" media="screen" href="style/style-message.css"/>
         <link rel="stylesheet" href="style/style-footer.css"/>
         <link rel="stylesheet" media="screen" href="style/style-box-modal-recover.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
         <title>Minha área</title>
     </head>
     <body>

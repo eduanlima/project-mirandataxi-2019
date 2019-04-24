@@ -19,6 +19,7 @@
         <link rel="stylesheet" media="screen" href="style/style-box-modal-in.css" />
         <link rel="stylesheet" media="screen" href="style/style-message.css"/>
         <link rel="stylesheet" href="style/style-footer.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
         <title>Minha área - Motorista</title>
     </head>
     <body>

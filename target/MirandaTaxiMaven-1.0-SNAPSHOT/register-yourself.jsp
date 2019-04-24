@@ -14,7 +14,8 @@
         <link rel="stylesheet" media="screen" href="style/style-box-modal-recover.css" />
         <link rel="stylesheet" media="screen" href="style/style-menu-main.css" />
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"/>       
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
         <title>Miranda Taxi</title>               
     </head>
     <body>
@@ -88,6 +89,7 @@
                 <div class="col-lg-12 col-md-12">
                     <h1 id="txt-main" class="h-message"></h1>
                     <h2 id="txt-second" class="h-message"></h2>
+                    <a href="index.jsp" id="btn-redirect"><button class="btn">Continuar</button></a>
                     <button id="btt-ok" class="btn">OK</button>
                 </div>
             </div>               

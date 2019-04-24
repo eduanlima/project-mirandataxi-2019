@@ -194,14 +194,14 @@ article[role=main] div#div-btt-prev{
     margin-right: auto;
 }
 #div-hour{
-    width: 17%;
+    width: 27%;
     max-height: 50px;
     margin-right: 3%;
     float: left;
     text-align: left;
 }
 #div-trip{
-    width: 80%;
+    width: 70%;
     float: left;
     text-align: left;
 }
@@ -472,6 +472,8 @@ article[role=main] div#div-btt-prev{
     font-family: 'source_sans_proregular';
     font-size:1.1em;
     cursor: pointer;
+    width: 100%;
+    padding: 10px;
 }
 #boxtermosaceite #termosaceite{
     outline: none;
@@ -519,8 +521,15 @@ article[role=main] div#div-btt-prev{
     #div-service, #div-main-type-service{
         margin-bottom: 10px;
     }
+    article[role=main] div#div-service img{
+        width: 75%;
+        margin-left: 12.5%;
+    }
 }
 @media screen and (min-width:768px) and (max-width:1200px){
+    #div-service, #div-main-type-service{
+        margin-bottom: 10px;
+    }
     #div-service{
         height: 760px;        
     }
@@ -528,6 +537,10 @@ article[role=main] div#div-btt-prev{
         margin-top: 15px;
     }
     #comments #cmp-comment{ height: 130px; }
+    article[role=main] div#div-service img{
+        width: 75%;
+        margin-left: 12.5%;
+    }
 }
 @media screen and (min-width: 1201px) and (max-width: 1366px){
     #div-service, #div-main-type-service{

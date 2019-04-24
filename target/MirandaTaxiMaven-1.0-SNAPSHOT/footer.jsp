@@ -1,3 +1,11 @@
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%>
+<%! 
+    //ano atual
+    Date dataAtual = new Date(); 
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+    String dataStr = sdf.format(dataAtual);
+%>
 <div id="footer">            
     <div class="row nopadding">
         <div class="container-fluid">
@@ -20,11 +28,11 @@
                         <li><a href="#"><img src="img/icons/img-face.png" alt="Facebook" class="social_img"></a></li>
                         <li><a href="#"><img src="img/icons/img-inst.png" alt="Instagram" class="social_img"></a></li>
                     </ul> 
-                    <p class="text-bold">© MirandaTaxi. All rights reserved.</p>
+                    <p class="text-bold">© <%= dataStr %> - MirandaTaxi. <br/>All rights reserved.</p>
                     <ul class="cards">
                         <li class="card"><img src="img/icons/visa.png" alt="Facebook" class="cards_img" id="visacard"></li>
                         <li class="card"><img src="img/icons/master.png" alt="Instagram" class="cards_img" id="mastercard"></li>
-                        <li class="card"><img src="img/icons/american.png" alt="Instagram" class="cards_img" id="americancard"></li>
+                        <li class="card"><img src="img/icons/amex.png" alt="Instagram" class="cards_img" id="americancard"></li>
                     </ul>
                 </div>
             </div> 

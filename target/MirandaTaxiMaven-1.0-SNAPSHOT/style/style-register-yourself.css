@@ -85,7 +85,9 @@ label[for=radio-female]{
 #black-page{
     display: none;
 }
-
+#btn-redirect{
+    text-decoration: none;
+}
 @media only screen and (max-width:462px){
     .title-main{font-size: 1.7em;}
     .lbl-standard{ font-size: 1.2em;}

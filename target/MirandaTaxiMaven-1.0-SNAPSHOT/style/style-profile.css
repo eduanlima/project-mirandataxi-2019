@@ -10,10 +10,11 @@
     line-height: 58px;
 }
 .forms{
-    border-bottom: 1px solid #8B8989;
-    /* border-radius: 5px; */
     margin-bottom: 15px;
     padding: 15px;
+}
+.line{
+    border: .5px solid #8B8989;
 }
 #form-update{
     width: 100%;    
@@ -53,6 +54,8 @@ label[for=radio-female]{
     text-align: left;
 }
 .btn-update{
+    background:#363636;
+    color:#ffffff;
     font-family: 'source_sans_proregular';
     text-transform: uppercase;
     font-size: 150%;   
@@ -61,6 +64,8 @@ label[for=radio-female]{
     border: none;
     cursor: pointer;
     outline: none !important;
+    padding: 5px 15px;
+    width: 30%;
 }
 .btn-update#btt-update-pwd{ display: none; }
 #btt-update img{

@@ -14,8 +14,19 @@ $(document).ready(function(){
     $('#up_pass, #current_psw, #up_pass_conf').mask('00000000');
     
     /*Máscara página register-service*/
-    $('#txt-hours').mask('00:00');
+    //$('#txt-hours').mask('00:00');
    // $('#docNumber').mask('000.000.000-00');
     $('#cardExpirationMonth').mask('00');
     $('#cardExpirationYear').mask('0000');
+    
+    $('#txt-hours').mask('HH:MM', {
+      'translation': {
+            'H': {
+                pattern: /[0-23]/
+            },
+            'M': {
+                pattern: /[0-59]/
+            }
+        }
+  });
 });

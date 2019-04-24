@@ -12,6 +12,7 @@
         <link rel="stylesheet" media="screen" href="style/style-box-modal-recover.css" />
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
         <title>Miranda Taxi Teste Alteração</title>
     </head>
     <body>
