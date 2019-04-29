@@ -19,14 +19,4 @@ $(document).ready(function(){
     $('#cardExpirationMonth').mask('00');
     $('#cardExpirationYear').mask('0000');
     
-    $('#txt-hours').mask('HH:MM', {
-      'translation': {
-            'H': {
-                pattern: /[0-23]/
-            },
-            'M': {
-                pattern: /[0-59]/
-            }
-        }
-  });
 });

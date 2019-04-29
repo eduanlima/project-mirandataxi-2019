@@ -51,7 +51,9 @@ $(document).ready(function(){
             dataType: "html",
             data: formu.serialize(),
             success: function (result) {
-                if (result === 1) {                    
+                result = parseInt(result);
+
+                if (result === 1) {
                     //opção 2 =>update senhas                    
                     if (op === 2) {
                         formu.each(function () {
@@ -170,7 +172,7 @@ $(document).ready(function(){
                             $("#up_pass").focus();
                        });                   
                     }else{
-                       mensagem("error", form, "Senha não encontrada! Verifique sua senha");
+                       mensagem("error", form, "Senha não confere! Verifique sua senha");
                     }
                 }
             });

@@ -1,16 +1,14 @@
 <%@page import="Model.Client"%>
 <%@page import="ModelDAO.ClientDAO"%>
 <%@page import="Model.Phone"%>
-<% 
-//String userID = (String)session.getAttribute("userId");
-            
-            int userID = Integer.parseInt((String)session.getAttribute("userId"));
-            Client client = new Client();//novo cliente
+<%             
+    int userID = Integer.parseInt((String)session.getAttribute("userId"));
+    Client client = new Client();//novo cliente
 
-            client.setId(userID);//setar id do cliente
-            ClientDAO clientDAO = new ClientDAO();//novo cliente DAO
-            client = clientDAO.readClient(client);//ler dados do cliente
-        %>
+    client.setId(userID);//setar id do cliente
+    ClientDAO clientDAO = new ClientDAO();//novo cliente DAO
+    client = clientDAO.readClient(client);//ler dados do cliente
+%>
 <div id="page-update">    
     <div class="row nopadding">
         <h1 class="title-main noselect">Dados da conta</h1>

@@ -55,9 +55,32 @@ var passenger, dataCor, hourCor, numFlight, origin, destination, note, babyChair
     },
             
     sendRunning = function(){
-            setValuesRunning();
-            setChekcValues();
-            
+        setValuesRunning();
+        setChekcValues();
+        var error = false;
+        console.log(error);
+        console.log(dataCor);
+
+        if(dataCor.length < 10){
+            $("#txt-date").css("border", "0.5px solid #ff0000");
+            error = true;
+        }
+        if(hourCor.length < 5){
+            $("#txt-hours").css("border", "0.5px solid #ff0000");
+            error = true;
+        }            
+        if(passenger.length < 5){
+            $("#txt-passenger").css("border", "0.5px solid #ff0000");
+            error = true;
+        }
+        if(!$("#termosaceite").is(':checked') ){
+            $("#boxtermosaceite").css("border", "0.5px solid #ff0000");
+            error = true;
+        }
+        
+        if(!error){
+            $("#boxtermosaceite").css("border", "none");
+            $("#payment").modal();
             $.ajax({
                 type: "post",
                 url: "CreateRunning",
@@ -77,6 +100,7 @@ var passenger, dataCor, hourCor, numFlight, origin, destination, note, babyChair
                 },
                 success: function(){}
             });
+        }           
     };
     
     document.getElementById("btt-next").addEventListener("click",sendRunning,false);

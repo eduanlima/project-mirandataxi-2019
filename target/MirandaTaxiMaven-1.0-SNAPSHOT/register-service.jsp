@@ -92,7 +92,7 @@
                                         </div>	
                                         <div id="div-itens-standard">
                                             <div class="row">
-                                                <div class="col-lg-5 col-md-12 col-sm-4 col-xs-6">
+                                                <div class="col-lg-4 col-md-12 col-sm-4 col-xs-6">
                                                     <div id="div-date-service" class="div-standard form-group">
                                                         <label for="txt-date" id="lbl-date" class="label-standard label-one">Data</label>
                                                         <div class="input-group date" id="datepicker1">
@@ -103,10 +103,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3 col-md-12 col-sm-4 col-xs-6">
+                                                <div class="col-lg-4 col-md-12 col-sm-4 col-xs-6">
                                                     <div id="div-hour-service" class="div-standard">
                                                         <label for="txt-hours" id="lbl-hour" class="label-standard label-one">Hora</label>
-                                                        <input type="text" id="txt-hours" class="txt-standard form-control" name="date-service" placeholder="00:00"/>
+                                                        <input type="time" id="txt-hours" class="txt-standard form-control" name="date-service" placeholder="00:00"/>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4 col-md-12 col-sm-4 col-xs-12">
@@ -199,7 +199,7 @@
                         
                             
                             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 col-lg-push-3">
-                                <button type="button" data-toggle="modal" data-target="#payment" class="btn" id="btt-next">Fazer pagamento</button>                               
+                                <button type="button" data-toggle="modal" data-target="#" class="btn" id="btt-next">Fazer pagamento</button>                               
                             </div>
                             
                             <input type="hidden" id="txt-value-run" name="txtValueRun"/>
@@ -278,7 +278,7 @@
                                                 <ul class="cards">
                                                     <li class="card"><img src="img/icons/visa.png" alt="Facebook" class="cards_img" id="visacard"></li>
                                                     <li class="card"><img src="img/icons/master.png" alt="Instagram" class="cards_img" id="mastercard"></li>
-                                                    <li class="card"><img src="img/icons/american.png" alt="Instagram" class="cards_img" id="americancard"></li>
+                                                    <li class="card"><img src="img/icons/amex.png" alt="Instagram" class="cards_img" id="americancard"></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -349,6 +349,7 @@
         <script src="js/app-mercado-pago.js" charset="UTF-8"></script>    
         <script src="js/payment.js"></script>
         <script src="js/create-running.js"></script>
+        
         <script type="text/javascript">
             $(function () {
                 $('#txt-date').datepicker({                    
