@@ -73,17 +73,17 @@ public class CalculateRunning extends HttpServlet {
         String vetResult[] = new String[4];
         
         if(typeRun.equals("k")){
-            vetResult[0] = MaskMonetary.getMask(running.getTotal());
-            vetResult[1] = MaskMetric.getMask(running.getValueRun()) + " km";
-            vetResult[2] = MaskMetric.getMask(running.getValueAddKm()) + " km";
-            vetResult[3] = MaskMonetary.getMask(running.getTotalKmAdd());
+            vetResult[0] = running.getTotal().toString();
+            vetResult[1] = running.getValueRun().toString();
+            vetResult[2] = running.getValueAddKm().toString();
+            vetResult[3] = running.getTotalKmAdd().toString();
             session.setAttribute("total", running.getTotal());
             
         }else if((typeRun.equals("h")) || typeRun.equals("t")){
-            vetResult[0] = MaskMonetary.getMask(running.getTotal());
+            vetResult[0] = running.getTotal().toString();
             vetResult[1] = "0";
-            vetResult[2] = MaskMetric.getMask(running.getValueAddKm()) + " km";
-            vetResult[3] = MaskMonetary.getMask(running.getTotalKmAdd());
+            vetResult[2] = running.getValueAddKm().toString();
+            vetResult[3] = running.getTotalKmAdd().toString();
             session.setAttribute("total", running.getTotal());
         }
         

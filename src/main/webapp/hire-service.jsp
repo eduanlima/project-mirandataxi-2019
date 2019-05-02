@@ -134,7 +134,7 @@
                                         <div>
                                             <h3 class="price-title">PREÇO DO SERVIÇO</h3>
                                             <h4 class="mini-price">Preço por hora: R$ 200,00*</h4>
-                                            <h4 class="desc-end">Preço por quilômetro (km): R$ ?,??**</h4>	
+                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 11,00**</h4>	
                                         </div>
                                         <form method="post" action="" class="form-btt-register">
                                             <button type="button" class="mini_btt bttConfirm">CONTRATAR AGORA<img src="img/icons/next-minimum.png"/></button>

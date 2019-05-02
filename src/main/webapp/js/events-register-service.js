@@ -9,9 +9,28 @@ var txtValueRun = document.getElementById("txt-value-run"),
     h4KmAdd = document.getElementById("h4-km-add"),
     h4TotalKmAdd = document.getElementById("h4-total-km-add"),
     
+    formatNumbers = function(num,place){
+        var n = Number(num).toFixed(place), aux = 0;
+        var nText = n.replace('.',','), txtShow = '';
+
+        txtShow = nText.slice(nText.length - (place + 1), nText.length);
+
+        for (var i = nText.length - (place + 2); i > -1; i--){
+                aux++;
+
+                if((aux === 3) && (i !== 0)){
+                        txtShow = '.' + nText.charAt(i) + txtShow;
+                        aux = 0;
+                }else{
+                        txtShow = nText.charAt(i) + txtShow;
+                }
+        }
+       return txtShow;
+    },
+
     showDistance = function(flag, result){
         if(flag){
-            h4Distance.innerHTML = result[1];
+            h4Distance.innerHTML = formatNumbers(result[1],3) + "km";
             h4Distance.style.visibility = "visible";
         
         }else if(!flag){
@@ -19,8 +38,8 @@ var txtValueRun = document.getElementById("txt-value-run"),
             h4Distance.style.visibility = "hidden";
         }
         
-        h4KmAdd.innerHTML = "*Adicional: " + result[2];
-        h4TotalKmAdd.innerHTML = "*Adicional: R$ " + result[3];
+        h4KmAdd.innerHTML = "*Adicional: " + formatNumbers(result[2],3) + "km";
+        h4TotalKmAdd.innerHTML = "*Adicional: R$ " + formatNumbers(result[3],2);
     },
     
     calculateRun = function(){
@@ -34,7 +53,7 @@ var txtValueRun = document.getElementById("txt-value-run"),
                 valueKmAdd: txtValueAddKm.value
             },
             success: function(result){
-                spnTotal.innerHTML = result[0];
+                spnTotal.innerHTML = formatNumbers(result[0],2);
               
                 if(result[1] !== "0"){
                     showDistance(true,result);

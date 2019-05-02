@@ -208,7 +208,10 @@ var distance = 0, map, origin, destination,
                         typeRoute = 4;
                     break;
                }
-                            
+               
+               console.log(typeRoute);
+               console.log(flagFrom);
+               
               if(((typeRoute === 1) || (typeRoute === 3)) && (flagFrom === 0)){
                   var flagF = 0;
                   for(var i = 0; i < vetTextFrom.length; i++){
@@ -224,7 +227,11 @@ var distance = 0, map, origin, destination,
                     calculateRoute(typeRoute);
                     bttNext.disabled = false;
                     bttNext.style.backgroundColor = "#000000";
-                  }
+                  
+                    } else if(flagF === 0){
+                        bttNext.disabled = false;
+                        bttNext.style.backgroundColor = "#000000";
+                    }
 
               }else if(((typeRoute === 2) || (typeRoute === 4)) && (flagTo === 0)){
                   var flagT = 0;
@@ -241,6 +248,10 @@ var distance = 0, map, origin, destination,
                     calculateRoute(typeRoute);
                     bttNext.disabled = false;
                     bttNext.style.backgroundColor = "#000000";
+                  
+                   }else if(flagT === 0){
+                        bttNext.disabled = false;
+                        bttNext.style.backgroundColor = "#000000";
                   }
               }
               

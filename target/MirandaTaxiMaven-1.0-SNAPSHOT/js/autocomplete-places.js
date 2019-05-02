@@ -1,5 +1,5 @@
       var placeSearch, autocomplete, vetInput = [];
-
+    
       var requestPlace = {
         route: 'long_name',
         street_number: 'long_name',
@@ -63,12 +63,11 @@
             
         }else if(val[4] === "undefined"){
             clearInput();
-            alert("Endereço não encontrado.");
+            showMessageForm("Atenção", "Endereço não encontrado. <br/>Insira o endereço com número.");
             
         }else if(val[4] !== "SP"){
             clearInput();
-            alert("Só realizamos corridas dentro do estado de São Paulo, para corridas entre outros estados, entre em contato conosco. ");
-            
+            showMessageForm("Atenção", "Só realizamos corridas dentro do estado de São Paulo, para corridas entre outros estados, entre em contato conosco.");
         }else{
             clearInput();
         }

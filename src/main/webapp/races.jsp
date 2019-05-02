@@ -24,10 +24,13 @@
 
 <div class="row">
     <div id="boxCancel">     
-        <header><h5>Tem certeza que deseja cancelar?</h5></header>
+        <header><h5>Tem certeza que deseja cancelar?</h5></header>        
         <div class="optionButton">            
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"><button type="button" id="accept_no" class="btn_option">Não</button></div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"><button type="button" id="accept_yes" class="btn_option">Sim</button></div>
+        </div>
+        <div class="loading_box">
+            <img src="img/icons/loader.gif">
         </div>
     </div>
 </div>

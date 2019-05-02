@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="utf-8">
         <link rel="stylesheet" media="screen" href="style/css-reset.css" />
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
         <link rel="stylesheet" media="screen" href="style/fonts.css" />
@@ -127,7 +127,7 @@
                                     <fieldset id="fld-from" class="fld-standard">
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <legend id="legend-from" class="legend-standard">Origem</legend>
-                                            <input type="text" id="txt-from-street" class="txt-standard form-control" name="from-street" placeholder="Rua, avenida, etc e número"/>
+                                            <input type="text" id="txt-from-street" class="txt-standard form-control" name="from-street" placeholder="23, Rua Rocha - Bela Vista - São Paulo"/>
                                         </div>
                                         
                                         <div class="form-group col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -143,7 +143,7 @@
                                     <fieldset id="fld-to" class="fld-standard">                                        
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <legend id="legend-to" class="legend-standard">Destino</legend>
-                                            <input type="text" id="txt-to-street" class="txt-standard form-control" name="to-street" placeholder="Rua, avenida, etc e número"/>
+                                            <input type="text" id="txt-to-street" class="txt-standard form-control" name="to-street" placeholder="23, Rua Rocha Bela Vista - São Paulo"/>
                                         </div>
                                         
                                         <div class="form-group col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -330,16 +330,13 @@
             <%@include file="footer.jsp"%><!--rodapé-->   
         </div>
 
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-        <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAuoodPmKSm1KfKc8RKsWKjY15Mdjqap8&callback=initMap&address=BR&key=AIzaSyAAuoodPmKSm1KfKc8RKsWKjY15Mdjqap8" type="text/javascript"></script>-->
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAuoodPmKSm1KfKc8RKsWKjY15Mdjqap8&callback=initMap&address=BR&key=AIzaSyAAuoodPmKSm1KfKc8RKsWKjY15Mdjqap8&libraries=places&callback=initAutocomplete" type="text/javascript"></script>
-        <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiv7v_-hsRqyvaKraPEcxKy2OVzLC9I48&callback=initMap&address=BR&key=AIzaSyAiv7v_-hsRqyvaKraPEcxKy2OVzLC9I48&libraries=places&callback=initAutocomplete" type="text/javascript"></script>-->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiv7v_-hsRqyvaKraPEcxKy2OVzLC9I48&callback=initMap&address=BR&key=AIzaSyAiv7v_-hsRqyvaKraPEcxKy2OVzLC9I48&libraries=places&callback=initAutocomplete" type="text/javascript"></script>
         <script src="js/validation-register-service.js" charset="UTF-8"></script>
         <script src="js/box-message-show.js"></script>
         <script src="js/check-session.js" charset="UTF-8"></script>
         <script src="js/events-register-service.js" charset="UTF-8"></script>
         <script src="js/distance-route.js" charset="UTF-8"></script>
-        <script src="js/autocomplete-places.js"></script>
+        <script src="js/autocomplete-places.js" charset="UTF-8"></script>
         <script src="js/image-car-selected.js"></script>
         <script src="js/jquery.mask.min.js"></script>
         <script src="js/all-masks.js"></script>

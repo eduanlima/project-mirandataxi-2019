@@ -86,7 +86,7 @@
                 case('220'): msg = 'Digite o seu banco emissor'; break;
                 case('221'): msg = 'Insira o nome e o sobrenome'; break;
                 case('224'): msg = 'Digite o código de segurança'; break;
-                case('E301'): msg = 'Há algo errado com este número. Volte a digitá-lo'; break;
+                case('E301'): msg = 'Há algo errado com o número do cartão. Volte a digitá-lo'; break;
                 case('E302'): msg = 'Revise o código de segurança'; break;
                 case('316'): msg = 'Insira um nome válido'; break;
                 case('322'): msg = 'Revise o seu documento'; break;
@@ -110,6 +110,7 @@
             $("#box-msg-alert").fadeIn();
             
         }else{
+            $("#btnpayment").css("background-color", "#ccc");
             $("#btnpayment").prop("disabled", true);
             
             var form = document.querySelector('#pay');
@@ -120,6 +121,6 @@
             form.appendChild(card);
             doSubmit=true;            
             form.submit();
-            $("#btnpayment").prop("disabled", false);
+           
         }
     };

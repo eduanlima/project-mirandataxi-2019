@@ -1,22 +1,22 @@
 @charset "UTF-8";
 html, body{
-	height: 100%;
-	min-height: 100%;
+    height: 100%;
+    min-height: 100%;
 }
 /*A style sheet for service-hire*/
 
 #page{
-	/*height: 100%;*/
-	text-align: center;
+    /*height: 100%;*/
+    text-align: center;
 }
 
 #li-register{
-	background-color: #CC3300;
+    background-color: #CC3300;
 }
 article[role=main] h1{
-	font-family: 'source_sans_proregular';
-	font-size: 240%;
-	color: #FF6600;
+    font-family: 'source_sans_proregular';
+    font-size: 240%;
+    color: #FF6600;
 }
 
 .lbl-sex{
@@ -88,10 +88,23 @@ label[for=radio-female]{
 #btn-redirect{
     text-decoration: none;
 }
+.gif{
+    width: 38px;
+    display: none;
+    padding: 5px;
+    margin-top: 16px;
+    position: absolute;
+}
+.gif img{
+    width: 100%;
+}
+.title-main{
+    font-family: 'source_sans_proregular';
+}
 @media only screen and (max-width:462px){
     .title-main{font-size: 1.7em;}
     .lbl-standard{ font-size: 1.2em;}
-    
+
     #btt-finish{
         width:90%;     
         margin-left: 17px;

@@ -171,7 +171,13 @@ textarea:-moz-placeholder{
     padding-left: 7px;
     margin: 15px;
 }
+.cmp-text{
+    font-family: 'source_sans_proregular';
+}
 
+.title-main{
+    font-family: 'source_sans_proregular';
+}
 @media only screen and (max-width: 480px){ 
     #btt-finish{width:100%; margin-left: 0px;}
 }

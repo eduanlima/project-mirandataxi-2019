@@ -31,7 +31,7 @@
                             <input type="text" id="txt-name" name="name" placeholder="Insira seu nome completo" class="form-control"/>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                            <label for ="txt-email" class="lbl-standard">E-mail</label>
+                            <label for ="txt-email" class="lbl-standard">E-mail (*)</label>
                             <input type="email" id="txt-email" name="email" class="form-control" placeholder="minha-conta-email@servico.com"/>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -58,7 +58,7 @@
                     </div>                        
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-6" id="div-space-pass">
-                            <label for="txt-pass" class="lbl-standard">Senha</label>
+                            <label for="txt-pass" class="lbl-standard">Senha (**)</label>
                             <input type="password" id="txt-pass" name="password" class="form-control" placeholder="Insira uma senha"/>
                         </div>
 
@@ -67,9 +67,13 @@
                             <input type="password" id="txt-conf-pass" class="form-control" placeholder="Digite novamente a senha" />
                         </div>
                     </div>
+                    <div class="row">    
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:left; padding: 10px 17px;">(*) Email utilizado para processo de compra | (**) Senha de 8 caracteres</div>
+                    </div>
                     <div class="row">
                         <div class="box-btt">
                             <button id="btt-finish" type="submit" name="nBttFinish">Finalizar</button>
+                            <span class="gif"><img src="img/icons/loader.gif" alt="Processando..."/></span>
                         </div>
                     </div>
                     </div>

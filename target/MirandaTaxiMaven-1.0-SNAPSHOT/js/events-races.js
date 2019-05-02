@@ -118,12 +118,13 @@ $(document).ready(function(){
     }
     /*quando a opção NÃO for clicada*/
     $("#accept_yes").bind("click", function(){       
-       codigo = $(this).attr('name');
-       dataHora = $(this).attr('value');
-       //desabilitar botão de excluir
-       $(this).prop("disabled", true);
-       $(this).css("opacity", "0.8");
-           
+        codigo = $(this).attr('name');
+        dataHora = $(this).attr('value');
+        //desabilitar botão de excluir
+        $(this).prop("disabled", true);
+        $(this).css("opacity", "0.8");
+        $(".loading_box").fadeIn();
+       
         $.ajax({
             type:'POST',
             url: 'CancelRunning',
@@ -137,6 +138,8 @@ $(document).ready(function(){
                     mensagem = 'Corrida excluída com sucesso';
                     tipo = 'success';                    
                 }else{
+                    $(".loading_box").fadeOut();
+                    $("#accept_yes").prop("disabled", false);
                     mensagem = 'Erro ao excluir a corrida! Tente novamente';
                     tipo = 'error';
                 }
@@ -294,9 +297,9 @@ $(document).ready(function(){
                         box += '<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 downLine"><button type="button" class="btn_black btn_detail">Detalhes<span class="glyphicon glyphicon-search"></span></button></div>';
                         box += '<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 downLine"><span class="info">'+generateStringPayment(paymentStatus)+'</span></div>';
                         box += '<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 downLine"><span class="info">'+generateStringRace(raceStatus)+'</span></div>';
-                        box += '<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 downLine"><button type="button" class="btn_black btn_cancel" name="'+info.payment.id+'" value="'+info.dataHour+'" '+formata+'>Cancelar<span class="glyphicon glyphicon-remove"></span></button></div></div>';
+                        box += '<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 downLine"><button type="button" class="btn_black btn_cancel" name="'+info.payment.id+'" value="'+info.dataHour+'" '+formata+'>Cancelar<i class="cancelclose"><img src="img/icons/delete-close.png"></i></button></div></div>';
                         box += '<div class="more-detail" id="detail_1">';
-                        box += '<i class="close"><span class="glyphicon glyphicon-remove"></span></i>';
+                        box += '<i class="close"><img src="img/icons/delete-close.png"></i>';
                         box += '<header><h5>Detalhes da corrida</h5></header>';
                         box += '<div class="md-line"><span class="md-title font18">Classe:</span><span class="md-content">'+info.classCar.name+'</span></div>';
                         box += '<div class="md-line"><span class="md-title">Preço hora: R$</span><span class="md-content">'+formatNumbers(info.classCar.priceHour,2)+'</span></div>';
@@ -327,16 +330,16 @@ $(document).ready(function(){
                             $(servico).each(function(i, service){
                                 var detalhe = service.addService.description;
                                 if(detalhe==="Cadeira para bebê"){
-                                    box += '<div class="md-line"><span class="md-title">'+service.addService.description+':</span><span class="md-content"></span></div>';
+                                    box += '<div class="md-line"><span class="md-title">'+service.addService.description+'</span><span class="md-content"></span></div>';
                                 }else{
                                     box += '<div class="md-line"><span class="md-title">'+service.addService.description+':</span><span class="md-content">'+service.details+'</span></div>';
                                 }                                
                             });
                         }           
                         box += '<div class="divider"></div><br>';
-                        box +=  '<div class="md-line"><span class="md-title">Total quilômetros adicionais: R$</span><span class="md-content">'+formatNumbers(info.totalKmAdd,2)+'</span></div>';
-                        box +=  '<div class="md-line"><span class="md-title">Subtotal: R$</span><span class="md-content">'+formatNumbers(info.totalPartial,2)+'</span></div>';
-                        box +=  '<span class="md-line"><span class="md-title" id="total-final">Total: R$'+formatNumbers(info.total,2)+'</span></span>';
+                        box +=  '<div class="md-line"><span class="md-title">Total quilômetros adicionais: R$ </span><span class="md-content">'+formatNumbers(info.totalKmAdd,2)+'</span></div>';
+                        box +=  '<div class="md-line"><span class="md-title">Subtotal: R$ </span><span class="md-content">'+formatNumbers(info.totalPartial,2)+'</span></div>';
+                        box +=  '<span class="md-line"><span class="md-title" id="total-final">Total: R$ '+formatNumbers(info.total,2)+'</span></span>';
                                                 
                         //incluir o conteúdo na página
                         $(box).appendTo(receiver);

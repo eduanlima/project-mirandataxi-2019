@@ -53,8 +53,8 @@ public class ReturnCarSession extends HttpServlet {
             BigDecimal bigPriceHour = new BigDecimal(""+classCar.getPriceHour());
             BigDecimal bigPriceKm = new BigDecimal(""+classCar.getPriceKm());
             
-            String priceHour = MaskMonetary.getMask(bigPriceHour);
-            String priceKm = MaskMonetary.getMask(bigPriceKm);
+            String priceHour = bigPriceHour.toString();
+            String priceKm = bigPriceKm.toString();
             
             String vetClass[] = {classCar.getId(),classCar.getName(),priceHour,priceKm};
             

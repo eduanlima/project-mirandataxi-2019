@@ -76,7 +76,7 @@ video{
     margin-left:auto;
     margin-right: auto;
 }
-@media screen and (min-width:340px) {
+@media screen and (min-width:480px) {
     #page #contorno-content{ margin-top:0px; }
     #page #contorno-content .brand-index{
         font-size: 2.5em;
@@ -84,10 +84,11 @@ video{
     #page #contorno-content .title-index{
         font-size: 1.3em;
     }
-    #videoprincipal{ width: 1102px; }
+    #videoprincipal{ width: 1102px; margin-left:-210px;}
     #page #contorno-content .brand-index img{ width: 50%; }
     #page #contorno-content .content-index{ font-size: 1.2em; }
 }
+
 @media screen and (max-width:339px){
     #page #contorno-content .brand-index{
         font-size: 2em;
@@ -105,7 +106,7 @@ video{
     #page #contorno-content .title-index{
         font-size: 2em;
     }
-    #videoprincipal{ width: 1102px; }
+    #videoprincipal{ width: 1102px; margin-left: 0px; }
     #page #contorno-content .brand-index img{ width: 35% }
     #page #contorno-content .content-index{ font-size: 1.3em; }
     

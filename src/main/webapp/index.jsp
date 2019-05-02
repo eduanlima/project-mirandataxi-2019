@@ -4,6 +4,20 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" media="screen" href="style/css-reset.css" />
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
+        <meta name="keywords" content="parana, bahia, rio de janeiro, minas gerais, belo horizonte, aeroporto, aero porto, 
+              guarulhos, brasilia, congonhas, taxi 5 estrelas, uber, uber blindado, motorista particular, táxi de luxo, fabio,
+              mirandataxi, taxi executivo, taxi blindado, taxi blindado em sao paulo, carros blindado em sao paulo, aluguel 
+              carro com motorista, carro blindado com motorista, Fabio Gomes Miranda, hotton cesar de melo gomes, taxi executivo, 
+              azera blindado, taxi azera, shielded taxi in sao paulo, armored car in sao paulo, armored cab in BrazilTaxi Luxo,Taxi,
+              Taxi Executivo, Taxi Blindado, Taxi Especial, Taxi Azera,Taxis Luxo, TaxiLuxo, Carros Luxo, Taxi Preto, Vans Luxo, Segurança, 
+              Transporte, Micro onibus, Safety transfers, Safety, Transfers, Taxi Seguro, Táxi de Luxo Sao Paulo, Veiculos Blindados, Blindado, 
+              blindados, Taxi em São Paulo, Taxi em São Paulo Executivo, Taxi em São Paulo de luxo, Taxi luxo em São Paulo, Serviço de 
+              taxi blindado em São Paulo, taxi blindado, taxi executivo sao paulo, alugar carros de luxo, carros de luxo com morotista, 
+              carro luxo motorista,Taxi executivo, taxis executivos São Paulo ,taxi executivo blindado,taxi blindado, taxi de luxo, taxi 
+              de luxo blindado, transporte executivo SP, transporte executivo blindado, transporte seguro,transfer, Transfers com carros blindados, 
+              Minivan, Minivan blindada, Van Executiva blindada, Vans, Sprinter Blindada, motoristas bilingüe, motoristas treinados, motoristas trajados,
+              motoristas uniformizados,Transport, Transport de grupos, carros importados, aluguel de carros blindados com motorista, aluguel, motorista 
+              blindado, carro blindado motorista">
         <link rel="stylesheet" media="screen" href="style/fonts.css" />
         <link rel="stylesheet" media="screen" href="style/style-index.css" />
         <link rel="stylesheet" media="screen" href="style/style-menu-main-index.css" />
@@ -13,7 +27,7 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
-        <title>Miranda Taxi Teste Alteração</title>
+        <title>Miranda Taxi</title>
     </head>
     <body>
         
@@ -64,7 +78,7 @@
                     <span class="content-index">
                         <div id="contact">
                             <a href="https://api.whatsapp.com/send?phone=5511998965109"><img src="img/icons/icon-whats.png" alt="WhatsApp" class="social_img"> (11) 99896-5109</a><br/>
-                            <span class="text-email">contato@mirandataxi.com</span>
+                            <span class="text-email">contato@mirandataxi.com.br</span>
                         </div>
                     </span>
                 </div>

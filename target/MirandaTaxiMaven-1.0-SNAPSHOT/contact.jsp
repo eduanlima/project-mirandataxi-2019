@@ -25,7 +25,8 @@
         <style>
             .menu-contact{background:#565656; }
         </style>
-        <title>Entre em contato</title>
+        <title>Miranda Taxi</title>
+    </head>
     </head>
     <body>
         <div id="page">
@@ -40,26 +41,26 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <form id="form-register">
-                                    <h2>Deixe-nos uma mensagem</h2>
+                                    <h2 class="title-main">Deixe-nos uma mensagem</h2>
                                     <div id="div-name" class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <label class="lbl-standard" for="txt-name">Nome <span class="required">(*)</span></label>
-                                        <input type="text" id="txt-name" name="name" placeholder="Nome completo" class="form-control"/>
+                                        <input type="text" id="txt-name" name="name" placeholder="Nome completo" class="form-control cmp-text"/>
                                     </div>
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <label for="txt-phone" class="lbl-standard">Telefone <span class="required">(*)</span></label>
-                                        <input type="text" id="txt-phone" name="phone" placeholder="(00)00000-0000" class="form-control"/>
+                                        <input type="text" id="txt-phone" name="phone" placeholder="(00)00000-0000" class="form-control cmp-text"/>
                                     </div>
 
                                     <div id="div-email" class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <label for="txt-email" class="lbl-standard">E-mail <span class="required">(*)</span></label>
-                                        <input type="text" id="txt-email" name="email" class="form-control" placeholder="minha-conta-email@servico.com"/>
+                                        <input type="text" id="txt-email" name="email" class="form-control cmp-text" placeholder="minha-conta-email@servico.com"/>
                                     </div>                    
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <label for="message" class="lbl-standard">Mensagem <span class="required">(*)</span></label>
-                                        <textarea class="message form-control"  id="message" placeholder="Deixe sua mensagem..."></textarea>   
+                                        <textarea class="message form-control cmp-text"  id="message" placeholder="Deixe sua mensagem..."></textarea>   
                                     </div>
                                     
-                                    <div class="col-lg-12" style="text-align:left;">(*) Campos obrigatórios</div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:left;">(*) Campos obrigatórios</div>
                                     
                                     <div class="box-btt">
                                         <button id="btt-finish" type="submit" name="nBttFinish">Enviar</button>                                
