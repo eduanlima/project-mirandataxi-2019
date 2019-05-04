@@ -13,8 +13,9 @@ html, body{ height: 100%; }
     border-radius: 0px;
 }
 .topHeader{
-    background: #0d0d0d !important;
-    opacity: 0.8;
+    background: #000000 !important;
+    background-color: transparent;
+    background-image: inherit !important;
 }
 .logo{
     color: #FFFFFF !important;
@@ -23,9 +24,10 @@ html, body{ height: 100%; }
     text-transform: uppercase;
     text-align: left;
     font-size: 2.4em !important;
-    margin-right: auto;
     padding-top: 10px;
     display: inline-block;
+    margin-left: 45px !important;
+    margin-top: 10px !important;
 }
 .container-menu li.menu,.sub-login{
     padding:0px;
@@ -82,11 +84,12 @@ html, body{ height: 100%; }
 }
 
 #logout span{ margin-left: 7px; }
-.dropdown-menu{ background:rgba(0,0,0,1) !important; font-family: 'source_sans_prolight';}
+.dropdown-menu{ background:#191919 !important; font-family: 'source_sans_prolight';}
 .sub-options{ color:#fff !important}
 
 /*EDITAR class bootstrap*/
 .sub-options:hover, .dropdown-menu>li.sub-menu>a:hover{color:#000 !important;}
+
 .dropdown-menu>li>a{color:#fff !important;}
 
 .navbar{margin-bottom: 0px !important; border:none !important;}
@@ -99,7 +102,11 @@ html, body{ height: 100%; }
     .logo{ font-size:1.7em !important; }
     #div-user-general{ display:none !important; }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px){    
+    .navbar-collapse{ 
+        background-color:#191919;
+        border-color: transparent !important;
+    }
     .container-menu li.sub-login:hover{
         background:#FF6600;
     }

@@ -40,6 +40,7 @@ $(document).ready(function(){
         
         if(erro) return false;
         $(btn).prop("disabled", true);
+
         $.ajax({
             type: "post",
             url: "SendEmail",

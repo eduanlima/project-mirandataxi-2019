@@ -29,13 +29,18 @@
         
         if(inputEmailRecover.value !== ""){
             var formRecover = $("#form-in-recover");
-            
+            $("#box-recover-loader").fadeIn();
+            $("#btt-go-recover").prop("disabled", true);
             $.ajax({
                 type: formRecover.attr("method"),
                 url: formRecover.attr("action"),
                 data: formRecover.serialize(),
                 success: function(data){
-                   hLabelInfo.innerHTML = data; 
+                   
+                   $("#box-recover-loader").fadeOut('fast', function(){
+                        $("#btt-go-recover").prop("disabled", false);
+                        hLabelInfo.innerHTML = data;
+                    });  
                 }
             });
         }else{

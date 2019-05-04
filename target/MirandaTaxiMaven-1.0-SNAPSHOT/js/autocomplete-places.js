@@ -34,7 +34,7 @@
         var defaultBounds = new google.maps.LatLngBounds(
             new google.maps.LatLng(-23.5505, -46.6333));
 
-        autocomplete = new google.maps.places.Autocomplete((vetInput[0]),{types: ['address'],componentRestrictions: {country: 'br'},bounds: defaultBounds});
+        autocomplete = new google.maps.places.Autocomplete((vetInput[0]),{types: [],componentRestrictions: {country: 'br'},bounds: defaultBounds});
         autocomplete.addListener('place_changed', fillInAddress);
         
       }

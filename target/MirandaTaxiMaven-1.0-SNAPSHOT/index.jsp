@@ -67,7 +67,37 @@
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
-            </nav>           
+            </nav>
+            <div class="row nopadding">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 nopadding">
+                    <div class="main-bg left-side">
+                        <img src="img/windows/title-index.png" alt="MirandaTaxi" class="image-bg" id="picture-text"/>
+                        <div id="mobile-pic" class="hidden-lg hidden-md">
+                            <img src="img/windows/car-desktop.png" alt="MirandaTaxi" class="image-bg" id="picture-mobile"/>
+                        </div>
+                        <div class="col-lg-12">
+                             <span class="content-index" id="key-text">Para deslocamento com maior agilidade eficiência e segurança, Vai de Taxi. 
+                                Todos os Taxis podem andar no corredor de ônibus em São Paulo, assim você não perde tempo no trânsito!
+                            </span>
+                            <div class="box-buy">
+                                <a href="hire-service.jsp" style="text-decoration: none;"><button class="btn-buy">CONTRATAR AGORA</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 nopadding">
+                    <div class="main-bg right-side">
+                        <img src="img/windows/car-desktop.png" alt="Carros Blindados" class="image-bg visible-lg visible-md" id="picture-car"/>
+                        <span class="content-index">
+                            <div id="contact">
+                                <b><a href="https://api.whatsapp.com/send?phone=5511998965109"><img src="img/icons/icon-whats.png" alt="WhatsApp" class="social_img"> (11) 99896-5109</a></b> | 
+                                <span class="text-email">contato@mirandataxi.com.br</span>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--
             <div id="page" class="main-page">               
                 <div id="contorno-content">
                     <div class="brand-index"><img src="img/icons/logo-miranda-taxi-imagem.png" alt="MIRANDA TAXI"/></div>
@@ -82,11 +112,12 @@
                         </div>
                     </span>
                 </div>
-                <div id="front-footer"></div>
+                <!--<div id="front-footer"></div>
                     <video autoplay muted loop id="videoprincipal">
                         <source src="style/video/miranda-video-alta.webm" type="video/webm">
 			<source src="style/video/miranda-video-alta.mp4" type="video/mp4">
-                    </video>
+                    </video>-->
+                
                 <div id="box-modal">
                     <form id="form-in">
                         <div id="div-close"><img src="img/icons/delete-close.png" /></div>
@@ -96,6 +127,7 @@
                         <div class="form-group">
                             <input type="password" id="txt-password-in" class="txt-in form-control" name="nPass" placeholder="Digite sua senha" required/>
                         </div>
+                        <div id="box-loader"><img src="img/icons/loader.gif" style="width:50px;"></div>
                         <h5 id="h-alert"><img src="img/icons/attetion.png" />Atenção, login ou senha inválidos.</h5>
                         <button type="submit" id="btt-go">ENTRAR</button>
                         <a id="re-password" href="">Esqueci minha senha</a>
@@ -109,6 +141,7 @@
                         <div class="form-group">
                             <input type="email" id="txt-recover-email" class="txt-in form-control" name="nEmailRecover" placeholder="minha-conta-email@servico.com" />
                         </div>
+                        <div id="box-recover-loader"><img src="img/icons/loader.gif" style="width:50px;"></div>
                         <h5 id="h-alert-recover"></h5>
                         <button type="submit" id="btt-go-recover">NOVA SENHA</button>
                     </form>

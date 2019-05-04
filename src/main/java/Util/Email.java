@@ -46,7 +46,6 @@ public class Email {
         props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
         props.put("mail.smtp.starttls.enable","true");
         props.put("mail.smtp.auth","true");
-        //props.put("mail.smtp.port","58
         
         Session s = Session.getInstance(props,
                 new javax.mail.Authenticator(){

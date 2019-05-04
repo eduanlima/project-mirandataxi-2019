@@ -47,13 +47,13 @@
     margin-right: 5px;
 }
 
-#btt-go{
+#btt-go, .btn-buy{
     font-family: 'source_sans_proregular';
     color: #FFFFFF;
-    font-size: 30px;
-    width: 50%;    
+    font-size: 2em;
+    width: 50%;
     border-style: solid;
-    border-width: 1px;
+    border-width: 3px;
     border-color: #FFFFFF;
     display: block;
     margin-left: auto;
@@ -61,7 +61,7 @@
     margin-bottom: 10px;
     background-color: transparent;
     outline-color: #8B8989;
-    transition:0.3s all;
+    transition: 0.3s all;
 }
 #btt-go:hover{
     color: #000000;
@@ -90,6 +90,13 @@
     width: 13px;
     height: 13px;
 }
+#box-loader, #box-recover-loader{
+    display: none;
+}
+.navbar-toggle{
+    margin-top: 17px !important;
+    margin-right: 51px !important;
+}
 @media screen and (max-width:599px){
     #box-modal{
         width: 70%;
@@ -114,14 +121,26 @@
         width: 40%;
     }
 }
-@media screen and (min-width:720px) and (max-width:992px){
+
+@media screen and (max-width:767px){
+    .main-bg #picture-text{
+        margin-top:63px;
+    }
+}
+@media screen and (min-width:767px) and (max-width:992px){
     #box-modal{
         width: 50%;
         left: 25%;
         top:15%;
     }
-    #btt-go{
+    #btt-go, .btn-buy{
         font-size: 25px;
         width: 40%;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    .btn-buy{
+        font-size: 25px;
+        width: 80%;
     }
 }

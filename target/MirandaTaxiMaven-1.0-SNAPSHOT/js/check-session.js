@@ -74,8 +74,7 @@ var liUser = $(".area-user"),
                     createMenuIn(true, result);   
                 }else if(result === ""){
                    createMenuIn(false, "");
-                }
-                
+                }                
             }
         });
     };

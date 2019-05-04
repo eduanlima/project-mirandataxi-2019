@@ -61,6 +61,8 @@ $(document).ready(function(){
             
             if(validate()){
                 var formIn = $("#form-in");
+                $("#box-loader").fadeIn();
+                $("#btt-go").prop("disabled", true);
                 
                 $.ajax({
                     type: formIn.attr("method"),
@@ -70,7 +72,11 @@ $(document).ready(function(){
                         var result = Number(data);
                         
                         if(result === 0){
-                            lblAlert.style.visibility = "visible";
+                            $("#box-loader").fadeOut('fast', function(){
+                                $("#btt-go").prop("disabled", false);
+                                lblAlert.style.visibility = "visible";
+                            });
+                                                        
                         }else{
                             pageEndVisible("#black-page");
                             boxMessageShow("#box-modal");
@@ -92,6 +98,12 @@ $(document).ready(function(){
             outSession();
         });
         
+        
+        setTimeout(function(){           
+            $(".left-side").fadeIn('slow', function(){
+                $(".right-side").fadeIn('slow');
+            });
+        }, 1500);
 });
 
 

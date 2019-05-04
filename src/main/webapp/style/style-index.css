@@ -3,12 +3,15 @@
 
 html, body{
     height: 100%;
-    min-height: 100%;
-    background-color: #000000;
+    background-color: #000000 !important;
+}
+.nopadding{
+    margin:0px !important;
+    padding: 0px !important;
 }
 .navbar-toggle{ border-radius: 0px !important;}
 #page{
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*text-align: center;*/
 }
 .main-page{ background: #333;}
@@ -48,20 +51,51 @@ html, body{
     color:#fff;
     font-size:3em;
 }
-#page #contorno-content .content-index{
-    font-family: 'source_sans_prolight';
-    font-size:1.3em;
-    color:#fff;
-    display: block;
-    margin-bottom: 10px;
+
+.container-menu{
+    /*margin-right: 30px !important;*/
+    margin-top: 10px !important;
+}
+.main-bg{ 
+    width: 100%; 
+    height: 100%;
+    padding: 15px;
     text-align: center;
+    display:none;
 }
-#page #contorno-content .content-index #contact{
+.main-bg #picture-car{
+    width: 102%;
+    margin-left: -58px;
+}
+.main-bg #picture-mobile{ width: 100%; }
+.main-bg #picture-text{
+    position: relative;
+    margin-top: 115px;
+    width: 76% !important;
+    margin-bottom: 36px;
+}
+.main-bg #mobile-pic{
+    margin-top: -170px;
+}
+.left-side{
+    background:#000;
+}
+
+.main-bg .content-index{
+    font-family: 'source_sans_prolight';
+    font-size: 1.3em;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    width: 85%;
+    margin: 20px auto;
+}
+.main-bg .content-index #contact{
     width: 100%;
-    padding:5px;
+    margin-top: -21px;
 }
-#page #contorno-content .content-index #contact a, 
-#page #contorno-content .content-index #contact .text-email{ 
+.main-bg .content-index #contact a, 
+.main-bg .content-index #contact .text-email{ 
     text-decoration: none;
     font-family: 'source_sans_prolight';
     color:#fff;
@@ -76,6 +110,7 @@ video{
     margin-left:auto;
     margin-right: auto;
 }
+
 @media screen and (min-width:480px) {
     #page #contorno-content{ margin-top:0px; }
     #page #contorno-content .brand-index{
@@ -116,4 +151,7 @@ video{
         width: 100%;
     }
     #page #contorno-content .brand-index img{ width: 160px; }
+}
+@media screen and (max-width:767px){
+    #key-text{ text-align: justify; }
 }

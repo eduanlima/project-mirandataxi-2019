@@ -45,7 +45,8 @@
         <div class="form-group">
             <input type="password" id="txt-password-in" class="txt-in form-control" name="nPass" placeholder="Digite sua senha" />
         </div>
-        <h5 id="h-alert"><img src="img/icons/attetion.png" />Atenção, login ou senha inválidos.</h5>
+        <div id="box-loader"><img src="img/icons/loader.gif" style="width:50px;"></div>
+        <h5 id="h-alert"><img src="img/icons/attetion.png" />Atenção, login ou senha inválidos.</h5>        
         <button type="submit" id="btt-go">ENTRAR</button>
         <a id="re-password" href="">Esqueci minha senha</a>
     </form>
@@ -57,6 +58,7 @@
         <div class="form-group">
             <input type="email" id="txt-recover-email" class="txt-in form-control" name="nEmailRecover" placeholder="minha-conta-email@servico.com" />
         </div>
+        <div id="box-recover-loader"><img src="img/icons/loader.gif" style="width:50px;"></div>
         <h5 id="h-alert-recover"></h5>
         <button type="submit" id="btt-go-recover">NOVA SENHA</button>
     </form>
