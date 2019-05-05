@@ -2,6 +2,7 @@
         linkOpen = document.getElementById("link-access-in");
 
         showModalIndex = function(){
+            pageEndVisible("#black-page");
             boxMessageShow("#box-modal");
             document.getElementById("h-alert").style.visibility = "hidden";
             document.getElementById("form-in").reset();

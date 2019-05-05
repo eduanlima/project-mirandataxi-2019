@@ -13,7 +13,7 @@
         <link rel="stylesheet" media="screen" href="style/css-reset.css" />
         <link rel="stylesheet" media="screen" href="style/style-contact.css" />    
         <link rel="stylesheet" media="screen" href="style/fonts.css" />
-        <link rel="stylesheet" media="screen" href="style/style-service.css" />
+        <link rel="stylesheet" media="screen" href="style/style-service.css" /> 
         <link rel="stylesheet" media="screen" href="style/style-footer.css" />
         <link rel="stylesheet" media="screen" href="style/style-menu-main.css" />
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>

@@ -12,7 +12,6 @@ var pageEndVisible = function (pageEnd) {
         $(pageEnd).css("width", "100%");
         $(pageEnd).css("position", "absolute");
         $(pageEnd).css("top", "0");
-        $(pageEnd).css("background-color", "rgba(255,255,255,0.8)");
 
         $("html, body").animate({scrollTop: 0}, 500, 'swing');//quando clicar em "CONTRATAR", deslizar até o topo em 0.5s
         if (document.getElementsByTagName("body")[0].style.overflow === "hidden") {
@@ -27,7 +26,7 @@ var pageEndVisible = function (pageEnd) {
     }
 },
 boxMessageShow = function (messageBox) {
-    $(messageBox).slideToggle("slow");
+    $(messageBox).fadeToggle("slow");
 };
 
 

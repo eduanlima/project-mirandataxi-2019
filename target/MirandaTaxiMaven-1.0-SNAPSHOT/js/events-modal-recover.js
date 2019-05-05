@@ -4,6 +4,7 @@
 
         showModalIndex = function(){
             boxMessageShow("#box-modal-recover");
+            pageEndVisible("#black-page");
             hLabelInfo.innerHTML = "";
         };
         

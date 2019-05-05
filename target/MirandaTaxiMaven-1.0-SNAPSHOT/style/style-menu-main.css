@@ -19,7 +19,7 @@
     text-transform: uppercase;
     text-align: left;
     font-size: 2.4em !important;
-    margin-right: auto;
+    margin-left: 45px !important;
     padding-top: 10px;
     display: inline-block;
 }
@@ -91,6 +91,7 @@
 
 .icon-in-out{ width: 15px; margin-left: 4px; margin-top: -3px;}
 
+#li-final{ margin-right: 45px; }
 /*medias queries*/
 @media only screen and (min-width: 200px) and (max-width: 375px){
     .logo{ font-size:1.7em !important; }

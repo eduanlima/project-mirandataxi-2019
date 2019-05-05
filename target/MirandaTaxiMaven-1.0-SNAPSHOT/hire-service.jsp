@@ -33,8 +33,8 @@
                             <p class="info-car">Veículo blindado</p>
                             <div>
                                 <h3>PREÇO DO SERVIÇO</h3>
-                                <h4>Preço por hora: R$ 250,00*</h4>
-                                <h4 class="desc-end">Preço por quilômetro (km): R$ 12,50**</h4>
+                                <h4>Preço por hora: R$ 250,00</h4>
+                                <h4 class="desc-end">Preço por quilômetro (km): R$ 12,50</h4>
                             </div>
                         </li>
                         <li class="info-class slide">
@@ -44,8 +44,8 @@
                             <p class="info-car">Veículos blindados</p>
                             <div>
                                 <h3>PREÇO DO SERVIÇO</h3>
-                                <h4>Preço por hora: R$ 150,00*</h4>
-                                <h4 class="desc-end">Preço por quilômetro (km): R$ 9,50**</h4>
+                                <h4>Preço por hora: R$ 150,00</h4>
+                                <h4 class="desc-end">Preço por quilômetro (km): R$ 9,50</h4>
                             </div>	
                         </li>                        
                         <li class="info-class slide">
@@ -55,8 +55,8 @@
                             <p class="info-car">Veículos blindados.</p>
                             <div>
                                 <h3>PREÇO DO SERVIÇO</h3>
-                                <h4>Preço por hora: R$ 200,00*</h4>
-                                <h4 class="desc-end">Preço por quilômetro (km): R$ 11,00**</h4>	
+                                <h4>Preço por hora: R$ 200,00</h4>
+                                <h4 class="desc-end">Preço por quilômetro (km): R$ 11,00</h4>	
                             </div>
                         </li>
                         <li class="info-class slide">
@@ -66,8 +66,8 @@
                             <p class="info-car unshielded">Veículos não blindados</p>
                             <div>
                                 <h3>PREÇO DO SERVIÇO</h3>
-                                <h4>Preço por hora: R$ 100,00*</h4>
-                                <h4 class="desc-end">Preço por quilômetro (km): R$ 7,00**</h4>
+                                <h4>Preço por hora: R$ 100,00</h4>
+                                <h4 class="desc-end">Preço por quilômetro (km): R$ 7,00</h4>
                             </div>	
                         </li>
                         <li class="info-class slide">
@@ -77,8 +77,8 @@
                             <p class="info-car unshielded">Veículos não blindados.</p>
                             <div>
                                 <h3>PREÇO DO SERVIÇO</h3>
-                                <h4>Preço por hora: R$ 75,00*</h4>
-                                <h4 class="desc-end">Preço por quilômetro (km): R$ 5,00**</h4>	
+                                <h4>Preço por hora: R$ 75,00</h4>
+                                <h4 class="desc-end">Preço por quilômetro (km): R$ 5,00</h4>	
                             </div>
                         </li>
                     </ul>                                   
@@ -96,8 +96,8 @@
                                         <p class="info-car">Veículo blindado</p>
                                         <div>
                                             <h3 class="price-title">PREÇO DO SERVIÇO</h3>
-                                            <h4 class="mini-price">Preço por hora: R$ 250,00*</h4>
-                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 12,50**</h4>
+                                            <h4 class="mini-price">Preço por hora: R$ 250,00</h4>
+                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 12,50</h4>
                                         </div> 
                                         <form method="post" action="" class="form-btt-register">
                                             <button type="button" class="mini_btt bttConfirm">CONTRATAR AGORA<img src="img/icons/next-minimum.png"/></button>
@@ -114,8 +114,8 @@
                                         <p class="info-car">Veículos blindados</p>
                                         <div>
                                             <h3 class="price-title">PREÇO DO SERVIÇO</h3>
-                                            <h4 class="mini-price">Preço por hora: R$ 150,00*</h4>
-                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 9,50**</h4>
+                                            <h4 class="mini-price">Preço por hora: R$ 150,00</h4>
+                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 9,50</h4>
                                         </div>
                                         <form method="post" action="" class="form-btt-register">
                                             <button type="button" class="mini_btt bttConfirm">CONTRATAR AGORA<img src="img/icons/next-minimum.png"/></button>
@@ -133,8 +133,8 @@
                                         <p class="info-car">Veículos blindados.</p>
                                         <div>
                                             <h3 class="price-title">PREÇO DO SERVIÇO</h3>
-                                            <h4 class="mini-price">Preço por hora: R$ 200,00*</h4>
-                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 11,00**</h4>	
+                                            <h4 class="mini-price">Preço por hora: R$ 200,00</h4>
+                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 11,00</h4>	
                                         </div>
                                         <form method="post" action="" class="form-btt-register">
                                             <button type="button" class="mini_btt bttConfirm">CONTRATAR AGORA<img src="img/icons/next-minimum.png"/></button>
@@ -151,8 +151,8 @@
                                         <p class="info-car unshielded">Veículos não blindados</p>
                                         <div>
                                             <h3 class="price-title">PREÇO DO SERVIÇO</h3>
-                                            <h4 class="mini-price">Preço por hora: R$ 100,00*</h4>
-                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 7,00**</h4>
+                                            <h4 class="mini-price">Preço por hora: R$ 100,00</h4>
+                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 7,00</h4>
                                         </div>
                                         <form method="post" action="" class="form-btt-register">
                                             <button type="button" class="mini_btt bttConfirm">CONTRATAR AGORA<img src="img/icons/next-minimum.png"/></button>
@@ -169,8 +169,8 @@
                                         <p class="info-car unshielded">Veículos não blindados.</p>
                                         <div>
                                             <h3 class="price-title">PREÇO DO SERVIÇO</h3>
-                                            <h4 class="mini-price">Preço por hora: R$ 75,00*</h4>
-                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 5,00**</h4>	
+                                            <h4 class="mini-price">Preço por hora: R$ 75,00</h4>
+                                            <h4 class="desc-end">Preço por quilômetro (km): R$ 5,00</h4>	
                                         </div>
                                         <form method="post" action="" class="form-btt-register">
                                             <button type="button" class="mini_btt bttConfirm">CONTRATAR AGORA<img src="img/icons/next-minimum.png"/></button>

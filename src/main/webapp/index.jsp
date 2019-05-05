@@ -49,7 +49,7 @@
                             <li class="menu"><a href="hire-service.jsp" title="Agende uma corrida" class="link-main">Contratar</a></li>
                             <li class="menu"><a href="services.jsp" title="Conheça nossos serviços" class="link-main">Serviços</a></li>
                             <li class="menu"><a href="contact.jsp" title="" class="link-main">Contato</a></li>
-                            <li class="dropdown sub-login">                                
+                            <li id="li-final" class="dropdown sub-login">                                
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="group-img-log img-logged" src="img/icons/user-logged.png" /><img class="group-img-log img-not-log" src="img/icons/user.png" /><span id="link-in" class="link-main">Login</span><span class="caret"></span></a>
                                 <ul class="dropdown-menu">  
                                     <li class="sub-menu area-no-user"><a href="#" id="link-access-in">ENTRAR <img src="img/icons/icon-log-in.png" alt="Entrar" class="icon-in-out"/></a></li>
@@ -147,7 +147,8 @@
                     </form>
                 </div>
             </div>
-        </div>        
+        </div> 
+        <div id="black-page"></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>   
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/min-menu.js"></script>

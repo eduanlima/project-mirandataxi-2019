@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.jsp" title="Home" class="navbar-brand logo">MIRANDATAXI</a>
+                <a href="index.jsp" title="Home" id="a-logo" class="navbar-brand logo">MIRANDATAXI</a>
             </div>
 
             <div class="collapse navbar-collapse" id="main-navbar">
@@ -16,7 +16,7 @@
                     <li class="menu menu-register-service"><a href="hire-service.jsp" title="Agende uma corrida" class="link-main">Contratar</a></li>
                     <li class="menu menu-service"><a href="services.jsp" title="Conheça nossos serviços" class="link-main">Serviços</a></li>
                     <li class="menu menu-contact"><a href="contact.jsp" title="Nos mande uma mensagem" class="link-main">Contato</a></li>
-                    <li class="dropdown sub-login">
+                    <li id="li-final" class="dropdown sub-login">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="group-img-log img-logged" src="img/icons/user-logged.png" /><img class="group-img-log img-not-log" src="img/icons/user.png" /><span id="link-in" class="link-main">Login</span><span class="caret"></span></a>
                         <ul class="dropdown-menu">  
                             <li class="sub-menu area-no-user"><a href="#" id="link-access-in">ENTRAR <img src="img/icons/icon-log-in.png" alt="Entrar" class="icon-in-out"/></a></li>
