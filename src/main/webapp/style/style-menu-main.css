@@ -20,7 +20,7 @@
     text-align: left;
     font-size: 2.4em !important;
     margin-left: 45px !important;
-    padding-top: 10px;
+    margin-top: 0px !important;
     display: inline-block;
 }
 .container-menu li.menu,.sub-login{
@@ -81,7 +81,6 @@
 #logout span{ margin-left: 7px; }
 .dropdown-menu{ background:#f60 !important; font-family: 'source_sans_prolight';}
 .sub-options{ color:#fff !important;}
-.sub-options:hover, .dropdown-menu>li.sub-menu>a:hover{color:#000 !important;}
 .dropdown-menu>li>a{color:#fff !important;}
 
 .dropdown-menu li{
@@ -94,17 +93,25 @@
 #li-final{ margin-right: 45px; }
 /*medias queries*/
 @media only screen and (min-width: 200px) and (max-width: 375px){
-    .logo{ font-size:1.7em !important; }
+    .logo{ font-size:1.7em !important; margin-left: 0px !important;}
+    
+    #li-final{ margin-right: 0px; }
+    
     #div-user-general{ display:none !important; }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px){  
+    .logo{ margin-left: 0px !important;}
+    
+    #li-final{ margin-right: 0px; }
+    
     .container-menu li.sub-login:hover{
-        background:#FF6600;
+        background:#000;
     }
     .container-menu li.sub-menu > a{ width: 100%;}
     .sub-menu a{ color:#fff !important; transition:0.2s all;}
-    .sub-menu a:hover{background:#000; font-size: 1.5em;}
+    .sub-menu a:hover{background:#000;}
     #div-user-general{ display:none !important; }
+    .dropdown-menu>li>a:hover{background:#333333 !important;}
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1279px){

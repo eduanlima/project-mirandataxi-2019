@@ -51,9 +51,8 @@
     font-family: 'source_sans_proregular';
     color: #FFFFFF;
     font-size: 2em;
-    width: 50%;
     border-style: solid;
-    border-width: 3px;
+    border-width: 1px;
     border-color: #FFFFFF;
     display: block;
     margin-left: auto;
@@ -63,7 +62,16 @@
     outline-color: #8B8989;
     transition: 0.3s all;
 }
-#btt-go:hover{
+
+#btt-go{
+    width: 80%;
+}
+
+.btn-buy{
+    width: 60%;
+}
+
+#btt-go:hover, .btn-buy:hover{
     color: #000000;
     background-color: #FFFFFF;
 }
@@ -94,53 +102,66 @@
     display: none;
 }
 .navbar-toggle{
-    margin-top: 17px !important;
-    margin-right: 51px !important;
+    margin-right: 15px !important;
 }
+
+
 @media screen and (max-width:599px){
     #box-modal{
-        width: 70%;
-        left: 15%;
-        top:15%;
+        width: 80%;
+        left: 10%;
+        top: 35%;
     }
     #btt-go{
         font-size: 22px;
-        width: 40%;
-        border-radius:3px;
     }
-}
-
-@media screen and (min-width:600px) and (max-width:719px){
-    #box-modal{
-        width: 50%;
-        left: 25%;
-        top:15%;
-    }
-    #btt-go{
-        font-size: 25px;
-        width: 40%;
+    
+    .btn-buy{
+        width: 90%;
     }
 }
 
 @media screen and (max-width:767px){
     .main-bg #picture-text{
-        margin-top:63px;
+        margin-top: 40px;
     }
 }
-@media screen and (min-width:767px) and (max-width:992px){
+
+@media screen and (max-width:599px){
+    #box-modal{
+        width: 70%;
+        left: 15%;
+        top:30%;
+    }
+    #btt-go{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:719px){
+    #box-modal{
+        width: 60%;
+        left: 20%;
+        top:35%;
+    }
+    #btt-go{
+        font-size: 25px;
+    }
+    
+    .btn-buy{
+        font-size: 25px;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:720px) and (max-width:992px){
     #box-modal{
         width: 50%;
         left: 25%;
-        top:15%;
+        top: 35%;
     }
-    #btt-go, .btn-buy{
-        font-size: 25px;
-        width: 40%;
-    }
-}
-@media screen and (min-width:992px) and (max-width:1200px){
+    
     .btn-buy{
-        font-size: 25px;
         width: 80%;
     }
 }

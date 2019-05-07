@@ -76,8 +76,8 @@
                             <img src="img/windows/car-desktop.png" alt="MirandaTaxi" class="image-bg" id="picture-mobile"/>
                         </div>
                         <div class="col-lg-12">
-                             <span class="content-index" id="key-text">Para deslocamento com maior agilidade eficiência e segurança, Vai de Taxi. 
-                                Todos os Taxis podem andar no corredor de ônibus em São Paulo, assim você não perde tempo no trânsito!
+                             <span class="content-index" id="key-text">Para deslocamento com maior agilidade eficiência e segurança, vá de taxi. 
+                                Todos os taxis podem andar no corredor de ônibus em São Paulo, assim você não perde tempo no trânsito!
                             </span>
                             <div class="box-buy">
                                 <a href="hire-service.jsp" style="text-decoration: none;"><button class="btn-buy">CONTRATAR AGORA</button></a>
@@ -90,8 +90,8 @@
                         <img src="img/windows/car-desktop.png" alt="Carros Blindados" class="image-bg visible-lg visible-md" id="picture-car"/>
                         <span class="content-index">
                             <div id="contact">
-                                <b><a href="https://api.whatsapp.com/send?phone=5511998965109"><img src="img/icons/icon-whats.png" alt="WhatsApp" class="social_img"> (11) 99896-5109</a></b> | 
-                                <span class="text-email">contato@mirandataxi.com.br</span>
+                                <b><a href="https://api.whatsapp.com/send?phone=5511998965109"><img src="img/icons/icon-whats.png" alt="WhatsApp" class="social_img"> (11) 99896-5109</a>  </b><span id="clear-bar">|</span> 
+                                <span class="text-email">  contato@mirandataxi.com.br</span>
                             </div>
                         </span>
                     </div>
@@ -128,7 +128,7 @@
                             <input type="password" id="txt-password-in" class="txt-in form-control" name="nPass" placeholder="Digite sua senha" required/>
                         </div>
                         <div id="box-loader"><img src="img/icons/loader.gif" style="width:50px;"></div>
-                        <h5 id="h-alert"><img src="img/icons/attetion.png" />Atenção, login ou senha inválidos.</h5>
+                        <h5 id="h-alert"><img src="img/icons/attetion.png" />Atenção: login ou senha inválidos.</h5>
                         <button type="submit" id="btt-go">ENTRAR</button>
                         <a id="re-password" href="">Esqueci minha senha</a>
                     </form>

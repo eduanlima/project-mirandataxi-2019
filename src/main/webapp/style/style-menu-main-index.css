@@ -24,10 +24,10 @@ html, body{ height: 100%; }
     text-transform: uppercase;
     text-align: left;
     font-size: 2.4em !important;
-    padding-top: 10px;
+    padding-top: 15px;
     display: inline-block;
     margin-left: 45px !important;
-    margin-top: 10px !important;
+    margin-top: 0px !important;
 }
 .container-menu li.menu,.sub-login{
     padding:0px;
@@ -88,7 +88,7 @@ html, body{ height: 100%; }
 .sub-options{ color:#fff !important}
 
 /*EDITAR class bootstrap*/
-.sub-options:hover, .dropdown-menu>li.sub-menu>a:hover{color:#000 !important;}
+.sub-options:hover, .dropdown-menu>li.sub-menu>a:hover{color:#fff !important;}
 
 .dropdown-menu>li>a{color:#fff !important;}
 
@@ -99,24 +99,33 @@ html, body{ height: 100%; }
 
 #li-final{ margin-right: 45px; }
 
+#li-final a #link-in:focus{ color: #000; }
+
 /*medias queries*/
 @media only screen and (min-width: 200px) and (max-width: 375px){
-    .logo{ font-size:1.7em !important; }
+    .logo{ font-size:1.7em !important;}
+    
+    #li-final{ margin-right: 0px; }
+    
     #div-user-general{ display:none !important; }
 }
-@media only screen and (max-width: 767px){    
+@media only screen and (max-width: 767px){ 
+    .logo{ margin-left: 0px !important;}
+    
+    #li-final{ margin-right: 0px; }
+    
     .navbar-collapse{ 
         background-color:#191919;
         border-color: transparent !important;
     }
     .container-menu li.sub-login:hover{
-        background:#FF6600;
+        background:#333;
     }
     .container-menu li.sub-menu > a{ width: 100%;}
     .sub-menu a{ color:#fff !important; transition:0.2s all;}
-    .sub-menu a:hover{background:#000; font-size: 1.5em;}
+    .sub-menu a:hover{background:#000;}
     #div-user-general{ display:none !important; }
-    .dropdown-menu>li>a:hover{background:#E8E8E8 !important;}
+    .dropdown-menu>li>a:hover{background:#333333 !important;}
     #sub-access li:hover{color:#fff !important;}
 }
 
