@@ -42,7 +42,7 @@ public class Email {
         
         Properties props = new Properties();
         props.put("mail.smtp.host","smtp.mirandataxi.com.br");
-        props.put("mail.smtp.socketFactory.port","587");
+        props.put("mail.smtp.socketFactory.port","465");
         props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
         props.put("mail.smtp.starttls.enable","true");
         props.put("mail.smtp.auth","true");

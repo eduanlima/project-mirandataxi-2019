@@ -77,7 +77,7 @@
                         </div>
                         <div class="col-lg-12">
                              <span class="content-index" id="key-text">Para deslocamento com maior agilidade eficiência e segurança, vá de taxi. 
-                                Todos os taxis podem andar no corredor de ônibus em São Paulo, assim você não perde tempo no trânsito!
+                                Todos os nossos taxis podem andar no corredor de ônibus em São Paulo, assim você não perde tempo no trânsito!
                             </span>
                             <div class="box-buy">
                                 <a href="hire-service.jsp" style="text-decoration: none;"><button class="btn-buy">CONTRATAR AGORA</button></a>

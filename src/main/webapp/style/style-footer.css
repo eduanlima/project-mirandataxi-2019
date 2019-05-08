@@ -69,7 +69,7 @@
 }
 #footer .cards .card{
     display: inline-block;
-    width:17%;
+    width: 40px;
 }
 #footer .cards .card:last-child{ margin-right: 10px; }
 #footer .cards .card .cards_img{

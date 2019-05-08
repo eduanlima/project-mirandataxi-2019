@@ -23,15 +23,12 @@ var bttBuy = document.getElementById("btt-confirm"),
     },
     
     visibleNotUser = function(){
-        pageEndVisible("#white-page");
+        pageEndVisible("#black-page");
         boxMessageShow("#modal-not-user");
     },
     
     accessNow = function(){  
-        pageEndVisible("#white-page");
         boxMessageShow("#modal-not-user");
-        
-        pageEndVisible("#black-page");
         boxMessageShow("#box-modal");
     },
             
@@ -45,7 +42,8 @@ var bttBuy = document.getElementById("btt-confirm"),
                 if(result !== ""){
                     redirectRegisterService();
                 }else if(result === ""){
-                    visibleNotUser();
+                    pageEndVisible("#black-page");
+                    boxMessageShow("#modal-not-user");
                 }                
             }
         });
@@ -64,6 +62,7 @@ var bttBuy = document.getElementById("btt-confirm"),
     
     divClose.addEventListener("click", visibleNotUser, false);
     bttRegisterNow.addEventListener("click", redirectRegisterUser, false);
+    
     $("#form-car").on("submit",function(e){
         e.preventDefault();
     });

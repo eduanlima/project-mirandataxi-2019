@@ -255,68 +255,77 @@ html, body{
 
 #modal-not-user{
     position: absolute;
+    top: 35%;
+    left: 35%;
     z-index: 999;
-    width: 40%;
-    left: 30%;
-    top: 30%;
-    background: rgba(0,0,0,0.8);
+    width: 25%;
+    height: 176px;
+    background: rgba(9,9,9,9);
     -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
     -moz-box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
     display: none;
-    padding: 5px 0px;
+    border: 2px solid #fff;
+    text-align: center;
 }
 
 .div-not-user{
-    width: 50%;
+    width: 100% !important;
     height: 140px;
     display: inline-block;
-    float: left;
 }
 
 #div-close-not-user{
-    width: 30px;
-    height: 30px;
-    margin-left: 92.5%; 
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    margin-left: 93.5%;
+    cursor: pointer; 
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 #div-close-not-user img{
-    width: 28px;
-    height: 28px;   
-    padding: 6px;    
+    width: 13px;
+    height: 13px;     
     cursor: pointer;
-    transition:0.3s all;
-    -o-transition: 0.3s all;
-    -webkit-transition: 0.3s all;
 }
 #div-close-not-user:hover{
-    background: #CCCCCC;
+    background: #333;
 }
+
+#box-cadastrar{
+   height: 70px;        
+}
+
+#box-acessar{
+   height: 75px;        
+}
+    
 .h-not-user{
     font-family: 'source_sans_prolight';
-    color: #FFFFFF;
-    font-size: 25px; 
-    margin-top: 8px;	
+    color: #ffffff;
+    font-size: 20px; 
+    width: 100%;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
 }
 
 .btt-not-user{
     font-family: 'source_sans_proregular';
     color: #FFFFFF;
     font-size: 25px;
+    width: 100%;
     text-transform: uppercase;
     background-color: transparent;
     border: solid;
     border-width: 1px;
-    border-color: #FFFFFF;
-    padding: 5px 10px;
+    border-color: #ffffff;
     transition:0.3s all;
     -o-transition: 0.3s all;
     -webkit-transition: 0.3s all;
-}
-
-#btt-access{ margin-top: 0px; }
-
-#btt-register{
-    margin-top: 8px;
 }
 
 .btt-not-user:hover{
@@ -416,7 +425,12 @@ html, body{
         padding: 5px;
     }
     .mini-price{        
-        font-size: 1.3em;
+        font-size: 1.1em;
+        color: #000;
+    }
+    
+    .desc-end{
+        font-size: 1.1em;
         color: #000;
     }
     .car-name{
@@ -442,20 +456,30 @@ html, body{
         left: 10%;
         top: 15%;
     }
-    #box-acessar{
-        border-bottom: 1px dotted #ccc;        
-    }
-    #div-close-not-user img{
-        margin-top: -21px;
-        margin-left: -14px;
-    }
-    .h-not-user:last-child{ margin-top:15px; }
-    #btt-access { margin-top: -15px; }    
-    #btt-register { margin-top: -8px; /*btt cadastrar*/}
+    
+    .h-not-user:last-child{ margin-top:15px; }   
     .form-btt-register #btt-confirm{ display: none; }
     #form-btt-register{display: none;}
     #mini-galeria nav #nav-mini .mini-pics a span{
         font-size:2.5em;
+    }
+    
+    #modal-not-user{
+        top: 35%;
+        left: 10%;
+        z-index: 999;
+        width: 80%;
+        height: 198px;
+    }
+
+    #div-close-not-user{
+        width: 20px;
+        height: 20px;
+        margin-left: 92.5%;
+    }
+    
+    #box-acessar{
+       height: 88px;        
     }
 }
 
@@ -498,13 +522,7 @@ html, body{
         left: 10%;
         top:15%;
     }
-    #box-acessar{
-        border-bottom: 1px dotted #ccc;        
-    }
-    #div-close-not-user img{
-        margin-top:-25px;
-        margin-left:-8px;
-    }
+
     .h-not-user:last-child{ margin-top:15px; }
     .price-title{
         font-size:19px; 
@@ -517,6 +535,28 @@ html, body{
     .sub_info .desc-end{ margin-bottom:0px; }
     #mini-galeria nav #nav-mini .mini-pics a span{
         font-size:2.5em;
+    }
+    
+    #modal-not-user{
+        top: 35%;
+        left: 20%;
+        z-index: 999;
+        width: 60%;
+        height: 196px;
+    }
+
+    #div-close-not-user{
+        width: 20px;
+        height: 20px;
+        margin-left: 92.5%;
+    }
+
+    #box-cadastrar{
+       height: 70px;        
+    }
+
+    #box-acessar{
+       height: 85px;        
     }
 }
 @media screen and (min-width:600px) and (max-width:719px){
@@ -565,9 +605,7 @@ html, body{
         width: 17px;
         margin-top: 1px;
     }
-    #box-acessar{
-        border-bottom: 1px dotted #ccc;        
-    }    
+    
     .h-not-user:last-child{ margin-top:15px; }
     .mini-price{
         font-size: 1.3em;
@@ -575,6 +613,22 @@ html, body{
     }
     #mini-galeria nav #nav-mini .mini-pics a span{
         font-size:2.5em;
+    }
+    
+    #modal-not-user{
+        top: 40%;
+        left: 27%;
+        z-index: 999;
+        width: 45%;
+        height: 200px;
+    }
+
+    #div-close-not-user{
+        margin-left: 92.5%;
+    }
+
+    #box-acessar{
+       height: 90px;        
     }
 }
 
@@ -626,7 +680,7 @@ html, body{
         width: 17px;
         margin-top: 1px;
     }
-    #box-acessar{border-bottom: 1px dotted #f18844;}
+
     .mini-price{        
         font-size: 1.3em;
         color: #000;
@@ -634,7 +688,42 @@ html, body{
     #mini-galeria nav #nav-mini .mini-pics a span{
         font-size:2.5em;
     }
+    
+    /*Modal not user*/
+    #modal-not-user{
+        top: 35%;
+        left: 35%;
+        z-index: 999;
+        width: 35%;
+        height: 196px;
+    }
+
+    .div-not-user{
+        height: 140px;
+    }
+
+    #div-close-not-user{
+        width: 20px;
+        height: 20px;
+        margin-left: 92%;
+    }
+
+    #box-acessar{
+       height: 85px;        
+    }
+
 }
+
+@media screen and (min-width:993px) and (max-width:1200px){
+    #prev{
+        margin-left:-45%;
+    }
+    
+    #div-close-not-user{
+        margin-left: 91%;
+    }
+}
+
 @media screen and (min-width:993px) and (max-width:1366px){
     #div-close-not-user img{/*margin-top:-27px; margin-left:-6px;*/}
     #btt-register{margin-top:0px;}
@@ -642,10 +731,5 @@ html, body{
     .btt-not-user{ font-size:20px; }
     .h-not-user{ font-size:23px;}
 
-}
-@media screen and (min-width:993px) and (max-width:1200px){
-    #prev{
-        margin-left:-45%;
-    }
 }
 

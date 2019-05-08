@@ -192,12 +192,12 @@
             <div id="modal-not-user">                       
                 <div id="div-close-not-user"><img src="img/icons/delete-close.png" /></div>
                 <div class="div-not-user col-lg-6 col-md-6 col-sm-12 col-xs-12" id="box-acessar">
-                    <h1 class="h-not-user">Acesse sua conta</h1><br/>
+                    <h1 class="h-not-user">Acesse sua conta:</h1><br/>
                     <button type="button" id="btt-access" class="btt btt-not-user">Entrar</button>
                 </div>
 
                 <div class="div-not-user col-lg-6 col-md-6 col-sm-12 col-xs-12" id="box-cadastrar">
-                    <h1 class="h-not-user">Crie uma conta agora!</h1><br/>
+                    <h1 class="h-not-user">Crie uma conta:</h1><br/>
                     <button type="button" id="btt-register" class="btt-not-user" />Cadastrar-se</button>
                 </div>
             </div>

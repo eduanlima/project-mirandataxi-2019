@@ -27,6 +27,7 @@ var pageEndVisible = function (pageEnd) {
 },
 boxMessageShow = function (messageBox) {
     $(messageBox).fadeToggle("slow");
+    $(messageBox).focus();
 };
 
 

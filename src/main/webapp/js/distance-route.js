@@ -72,7 +72,7 @@ var distance = 0, map, origin, destination,
             
             if(distance >= 20){
                 if (distance !== distancePrev.value) {
-                    $('#showMessage #infoMensagem').html("Deslocamento até ponto de partida é maior que 20km");
+                    $('#showMessage #infoMensagem').html("Deslocamento até ponto de partida é maior que 20km.");
                     $('#showMessage').modal();
                     txtValueAddKm.value = distance;
                     calculateRun();

@@ -27,7 +27,7 @@
                     <div class="col-lg-6">
                         <article id="article">
                             <span class="container-driver">
-                                <p><h1>Você Está Procurando um Táxi Blindado em São Paulo?</h1></p>
+                                <p><h1>Você está procurando um taxi blindado em São Paulo?</h1></p>
                                 <p><h2>Excelência em serviço de transporte.</h2></p>
                                 <p><h3 class="text-h3">Precisando de transporte para recepcionar no
                                     Aeroporto? Ficar com carro e motorista a

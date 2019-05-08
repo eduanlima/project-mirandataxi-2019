@@ -82,7 +82,7 @@ html, body{
 
 .main-bg .content-index{
     font-family: 'source_sans_prolight';
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #fff;
     display: inline-block;
     text-align: center;
@@ -128,10 +128,12 @@ html, body{
 }
 
 @media screen and (min-width: 200px) and (max-width: 533px){
+    .main-bg #picture-mobile{ width: 100%; margin-top: 90px;}
     #clear-bar{display: none;}
 }
 
 @media screen and (max-width:339px){
+    .main-bg #picture-mobile{ width: 100%; margin-top: 80px;}
     #page #contorno-content .brand-index{
         font-size: 2em;
     }
