@@ -118,7 +118,7 @@ var txtValueRun = document.getElementById("txt-value-run"),
         if (totalKm >= 60){
             txtTypeRun.value = "k";
             txtValueRun.value = totalKm;            
-            showMessageForm("Atenção!","O percurso inserido ultrapassa 60km de distância da origem ao destino, a taxa aplicada será reais por quilômetro**.");
+            showMessageForm("Atenção!","O percurso inserido ultrapassa 60km de distância da origem ao destino, a taxa aplicada será reais por quilômetro.");
         }  
         calculateRun();
     };

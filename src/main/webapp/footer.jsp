@@ -12,8 +12,8 @@
             <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 col-lg-push-2 nopadding">
                 <div class="boxes">
                     <div class="titleBoxes">MENSAGEM</div>
-                    <p>Para dúvidas, informações e etc, você pode enviar
-                        uma mensagem diretamente em nosso <b class="text-bold">WhatsApp</b>                            
+                    <p>Para dúvidas ou informações, você pode enviar
+                        uma mensagem diretamente para nosso <b class="text-bold">WhatsApp</b>                            
                     </p>
                     <p>Clique no número abaixo:</p>
                     <div id="whatsapp" class="titleBoxes"><a href="https://api.whatsapp.com/send?phone=5511998965109" target="blank"><img src="img/icons/icon-whats.png" alt="WhatsApp" class="social_img"> (11) 99896-5109</a></div>

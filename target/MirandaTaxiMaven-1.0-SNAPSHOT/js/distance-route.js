@@ -67,24 +67,31 @@ var distance = 0, map, origin, destination,
     function callbackStart(response, status){
         var distance = 0;
         try{
-
-            distance = response.rows[0].elements[0].distance.value / 1000;
-            
-            if(distance >= 20){
-                if (distance !== distancePrev.value) {
-                    $('#showMessage #infoMensagem').html("Deslocamento até ponto de partida é maior que 20km.");
-                    $('#showMessage').modal();
-                    txtValueAddKm.value = distance;
-                    calculateRun();
-                    distancePrev.value = distance;
-                }
+            if(response.originAddresses[0]!=="São Paulo, SP, Brasil"){
                 
-            }else if(distance < 20){
-                if(distancePrev.value !== 0){
-                    txtValueAddKm.value = 0;
-                    calculateRun();
-                    distancePrev.value = 0;
+                if((txtStreetFrom.value !== txtStreetTo.value) || (txtNeighborFrom.value !== txtNeighborTo.value) || (txtCityFrom.value !== txtCityTo.value)){
+                   
+                    distance = response.rows[0].elements[0].distance.value / 1000;
+                    if(distance >= 20){
+                        if(distance !== Number(distancePrev.value)){
+                            $('#showMessage #infoMensagem').html("Taxa adicional aplica, pois o deslocamento do motorista até ponto de origem é maior que 20km.");
+                            $('#showMessage').modal();
+                            txtValueAddKm.value = distance;
+                            calculateRun();
+                            distancePrev.value = distance;
+                        }
+                    }else if(distance < 20){
+                        if(distancePrev.value !== 0){
+                            txtValueAddKm.value = 0;
+                            calculateRun();
+                            distancePrev.value = 0;
+                        }
+                    }
                 }
+                  
+            }else{
+                bttNext.disabled = true;
+                bttNext.style.backgroundColor = "#B5B5B5";
             }
             
         }catch(error){
@@ -95,14 +102,52 @@ var distance = 0, map, origin, destination,
     function callback (response, status) {
         var distanceCalc = 0;
         try{
+            if(response.destinationAddresses[0]!=="São Paulo, SP, Brasil"){
+                
+                if(response.originAddresses[0]!=="São Paulo, SP, Brasil"){
+                    
+                    if(response.originAddresses[0]!== response.destinationAddresses[0]){
+                        
+                        distanceCalc = response.rows[0].elements[0].distance.value;
+                        document.getElementById("txt-total-km").value = distanceCalc / 1000;
+                        setRunKm();
 
-            distanceCalc = response.rows[0].elements[0].distance.value;
-            
-            document.getElementById("txt-total-km").value = distanceCalc / 1000;
-            setRunKm();
-            
-            iframeMap.src = "https://www.google.com/maps/embed/v1/directions?key=AIzaSyAAuoodPmKSm1KfKc8RKsWKjY15Mdjqap8&origin="+encodeURI(response.originAddresses)+"&destination="+encodeURI(response.destinationAddresses);
+                        iframeMap.src = "https://www.google.com/maps/embed/v1/directions?key=AIzaSyAAuoodPmKSm1KfKc8RKsWKjY15Mdjqap8&origin="+encodeURI(response.originAddresses)+"&destination="+encodeURI(response.destinationAddresses);
 
+                        bttNext.disabled = false;
+                        bttNext.style.backgroundColor = "#000000";
+                   
+                    }else if(response.originAddresses[0] === response.destinationAddresses[0]){
+                        document.getElementById("txt-from-street").value = "";
+                        document.getElementById("txt-from-neighbor").value = "";
+                        document.getElementById("txt-from-city").value = "";
+                        document.getElementById("txt-to-street").value = "";
+                        document.getElementById("txt-to-neighbor").value = "";
+                        document.getElementById("txt-to-city").value = "";
+                        
+                        showMessageForm("Atenção", "Endereço de origem e destino estão idênticos.");
+                        bttNext.disabled = true;
+                        bttNext.style.backgroundColor = "#B5B5B5";
+                    }
+                    
+                }else{
+                    document.getElementById("txt-from-street").value = "";
+                    document.getElementById("txt-from-neighbor").value = "";
+                    document.getElementById("txt-from-city").value = "";
+                    showMessageForm("Atenção", "Endereço de origem não encontrado. <br/>Insira o endereço com número.");
+                    bttNext.disabled = true;
+                    bttNext.style.backgroundColor = "#B5B5B5"; 
+                }
+                           
+            }else{
+                document.getElementById("txt-to-street").value = "";
+                document.getElementById("txt-to-neighbor").value = "";
+                document.getElementById("txt-to-city").value = "";
+                showMessageForm("Atenção", "Endereço de destino não encontrado. <br/>Insira o endereço com número.");
+                bttNext.disabled = true;
+                bttNext.style.backgroundColor = "#B5B5B5"; 
+            }
+           
         }catch(error){
             alert("An error occurred: "+error);
         }
@@ -141,57 +186,29 @@ var distance = 0, map, origin, destination,
         var flagFrom = 0, flagTo = 0, flag = 0, typeRoute = 0;
         
         for (var i = 0; i < vetTextFrom.length; i++){
-            if((vetTextFrom[i].value === "") || (vetTextFrom[i].value === "undefined")){
+            if((vetTextFrom[i].value.length <= 3 ) || (vetTextFrom[i].value === "undefined")){
                 flagFrom++;
             }
         }
         
         for (var i = 0; i < vetTextTo.length; i++){
-            if((vetTextTo[i].value === "") || (vetTextTo[i].value === "undefined")){
+            if((vetTextTo[i].value.length <= 3) || (vetTextTo[i].value === "undefined")){
                 flagTo++;
             }
         }
         
         if((flagFrom === 0) && (radioTypeService[0].checked)){
-            if((txtValueAddKm.value === "0") && (distancePrev.value === "0")){
                 var destinationStart = txtStreetFrom.value + " - " + txtNeighborFrom.value + ", " + " " + txtCityFrom.value + " - SP, Brasil";
                 calculateDistanceStart("Rua Rocha, 23 - Bela Vista, São Paulo - SP, Brasil", destinationStart);  
-            }
         }
 
         if((flagFrom === 0) && (flagTo === 0) && (radioTypeService[0].checked)){
-            for (var i = 0; i < vetTextFrom.length; i++){
-                if (vetAddress[i] !== vetTextFrom[i].value) {
-                    flag++;
-                }
-            }
-            
-            for (var i = 0; i < vetTextTo.length; i++){
-                if (vetAddress[i+3] !== vetTextTo[i].value) {
-                    flag++;
-                }
-            }
-            
-            if (flag > 0){
-                
-                for (var i = 0; i < vetTextFrom.length; i++){
-                    vetAddress[i] = vetTextFrom[i].value;
-                }
-
-                for (var i = 0; i < vetTextTo.length; i++){
-                    vetAddress[i+3] = vetTextTo[i].value;
-                }
-                
-                calculateRoute(typeRoute);
-                bttNext.disabled = false;
-                bttNext.style.backgroundColor = "#000000";
-                
-            }else if (flag === 0){}
+            calculateRoute(typeRoute);
             
         }else if(radioTypeService[1].checked){
               var pointStart = sctTrip.value;
                     
-              switch(pointStart){
+                switch(pointStart){
                     case "spgru":
                         typeRoute = 1;
                     break;
@@ -209,50 +226,11 @@ var distance = 0, map, origin, destination,
                     break;
                }
                
-               console.log(typeRoute);
-               console.log(flagFrom);
-               
               if(((typeRoute === 1) || (typeRoute === 3)) && (flagFrom === 0)){
-                  var flagF = 0;
-                  for(var i = 0; i < vetTextFrom.length; i++){
-                      if(vetFrom[i] !== vetTextFrom[i].value){
-                          flagF++;
-                      }
-                  }
-                  
-                  if(flagF > 0){
-                    for(var i = 0; i < vetTextFrom.length; i++){
-                        vetFrom[i] = vetTextFrom[i].value;
-                    }
                     calculateRoute(typeRoute);
-                    bttNext.disabled = false;
-                    bttNext.style.backgroundColor = "#000000";
-                  
-                    } else if(flagF === 0){
-                        bttNext.disabled = false;
-                        bttNext.style.backgroundColor = "#000000";
-                    }
 
               }else if(((typeRoute === 2) || (typeRoute === 4)) && (flagTo === 0)){
-                  var flagT = 0;
-                  for(var i = 0; i < vetTextTo.length; i++){
-                      if(vetTo[i] !== vetTextTo[i].value){
-                          flagT++;
-                      }
-                  }
-                  
-                  if(flagT > 0){
-                    for(var i = 0; i < vetTextTo.length; i++){
-                        vetTo[i] = vetTextTo[i].value;
-                    }
-                    calculateRoute(typeRoute);
-                    bttNext.disabled = false;
-                    bttNext.style.backgroundColor = "#000000";
-                  
-                   }else if(flagT === 0){
-                        bttNext.disabled = false;
-                        bttNext.style.backgroundColor = "#000000";
-                  }
+                    calculateRoute(typeRoute);     
               }
               
         }  
@@ -260,7 +238,57 @@ var distance = 0, map, origin, destination,
     }
             
     function activeClick(){
+        bttNext.disabled = true;
+        bttNext.style.backgroundColor = "#B5B5B5";
         divTypeService.click();
+    }
+    /*
+    function validateStreetFrom(){
+        if((txtStreetTo.value !== "") && (txtNeighborFrom.value !== "") && (txtCityFrom.value !== "")){
+            bttNext.disabled = true;
+            bttNext.style.backgroundColor = "#B5B5B5";
+            divTypeService.click();
+        }
+    }
+    */
+    function validateAddressFrom(){
+        bttNext.disabled = true;
+        bttNext.style.backgroundColor = "#B5B5B5";
+        
+        if((txtDate.value !== "") && (txtHours.value !== "") && (txtPassenger.value !== "")){
+            if(txtStreetFrom.value === ""){
+                txtStreetFrom.focus();    
+
+            }else if(txtNeighborFrom.value === ""){
+                txtNeighborFrom.focus();
+
+            }else if(txtCityFrom.value === ""){
+                txtCityFrom.focus();
+
+            }else{
+                divTypeService.click();
+            }
+        }
+    }
+    
+    function validateAddressTo(){
+        bttNext.disabled = true;
+        bttNext.style.backgroundColor = "#B5B5B5";
+        
+        if((txtDate.value !== "") && (txtHours.value !== "") && (txtPassenger.value !== "")){
+            if(txtStreetTo.value === ""){
+                txtStreetTo.focus();    
+
+            }else if(txtNeighborTo.value === ""){
+                txtNeighborTo.focus();
+
+            }else if(txtCityTo.value === ""){
+                txtCityTo.focus();
+
+            }else{
+                divTypeService.click();
+            }
+        }
     }
     
     function setPointMap(){
@@ -278,17 +306,14 @@ var distance = 0, map, origin, destination,
             setPointMap();
         }
     }
-    
-    
+
     divTypeService.addEventListener("click",filterRoute,false);
     
-    txtStreetFrom.addEventListener("blur",activeClick,false);
-    txtNeighborFrom.addEventListener("blur",activeClick,false);
-    txtCityFrom.addEventListener("blur",activeClick,false);
+    txtNeighborFrom.addEventListener("blur",validateAddressFrom,false);
+    txtCityFrom.addEventListener("blur",validateAddressFrom,false);
     
-    txtStreetTo.addEventListener("blur",activeClick,false);
-    txtNeighborTo.addEventListener("blur",activeClick,false);
-    txtCityTo.addEventListener("blur",activeClick,false);
+    txtNeighborTo.addEventListener("blur",validateAddressTo,false);
+    txtCityTo.addEventListener("blur",validateAddressTo,false);
     
     sctTrip.addEventListener("change",setPointMap,false);
     

@@ -63,13 +63,13 @@
             
         }else if(val[4] === "undefined"){
             clearInput();
-            showMessageForm("Atenção", "Endereço não encontrado. <br/>Insira o endereço com número.");
-            
+            document.getElementById("btt-next").disabled = true;
         }else if(val[4] !== "SP"){
             clearInput();
-            showMessageForm("Atenção", "Só realizamos corridas dentro do estado de São Paulo, para corridas entre outros estados, entre em contato conosco.");
+            document.getElementById("btt-next").disabled = true;
         }else{
             clearInput();
+            document.getElementById("btt-next").disabled = true;
         }
 
         $("#div-main-type-service").click();

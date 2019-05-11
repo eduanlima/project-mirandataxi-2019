@@ -127,7 +127,7 @@
                                     <fieldset id="fld-from" class="fld-standard">
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <legend id="legend-from" class="legend-standard">Origem</legend>
-                                            <input type="text" id="txt-from-street" class="txt-standard form-control" name="from-street" placeholder="23, Rua Rocha - Bela Vista - São Paulo"/>
+                                            <input type="text" id="txt-from-street" class="txt-standard form-control" name="from-street" placeholder="Pesquise o local (endereço)"/>
                                         </div>
                                         
                                         <div class="form-group col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -143,7 +143,7 @@
                                     <fieldset id="fld-to" class="fld-standard">                                        
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <legend id="legend-to" class="legend-standard">Destino</legend>
-                                            <input type="text" id="txt-to-street" class="txt-standard form-control" name="to-street" placeholder="23, Rua Rocha Bela Vista - São Paulo"/>
+                                            <input type="text" id="txt-to-street" class="txt-standard form-control" name="to-street" placeholder="Pesquise o local (endereço)"/>
                                         </div>
                                         
                                         <div class="form-group col-lg-6 col-md-12 col-sm-12 col-xs-12">

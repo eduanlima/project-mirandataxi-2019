@@ -1,8 +1,26 @@
 @charset "UTF-8";
+
 html, body{
     height: 100%;
     min-height: 100%;
 }
+
+#div-nav{
+    width: 920px;
+    height: 50px;
+    margin-top: -400px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-bottom: 350px;
+}
+
+#div-space-nav{
+    display: inline-block;
+    width: 840px;
+    height: 50px;
+}
+
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -193,9 +211,7 @@ html, body{
     background-image: url(../img/icons/previous-maximum.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    position: absolute;
-    margin-left:-38%;
-    margin-top:162px;
+    float: left;
 }
 
 #next{
@@ -205,9 +221,7 @@ html, body{
     background-image: url(../img/icons/next-maximum.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    float: left;
-    margin-left: 14%;
-    margin-top: -394px;
+    float: right;
 }
 
 #prev:hover{
@@ -712,16 +726,6 @@ html, body{
        height: 85px;        
     }
 
-}
-
-@media screen and (min-width:993px) and (max-width:1200px){
-    #prev{
-        margin-left:-45%;
-    }
-    
-    #div-close-not-user{
-        margin-left: 91%;
-    }
 }
 
 @media screen and (min-width:993px) and (max-width:1366px){

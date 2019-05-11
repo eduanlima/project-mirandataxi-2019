@@ -109,10 +109,23 @@ label[for=radio-female]{
         width:90%;     
         margin-left: 17px;
     }
+    
 }
 @media (max-width: 630px){
     #page-update .title-main{
         font-size: 1.2em !important;
         line-height: normal !important;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #btt-cfm-pwd, #btt-update{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #btt-cfm-pwd, #btt-update{
+        font-size: 120%;
     }
 }

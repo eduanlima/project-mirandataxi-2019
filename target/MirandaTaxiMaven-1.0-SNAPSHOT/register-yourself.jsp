@@ -79,21 +79,12 @@
                     </div>
                 </form>
             </div>
-            <!--<div id="box-modal">
-                <form id="form-in">
-                    <div id="div-close"><img src="img/icons/delete-close.png" /></div>
-                    <input type="email" id="txt-email-in" class="txt-in" name="nEmail" placeholder="minha-conta-email@servico.com" />
-                    <input type="password" id="txt-password-in" class="txt-in" name="nPass" placeholder="Digite sua senha" />
-                    <h5 id="h-alert"><img src="img/icons/attetion.png" />Atenção, login ou senha inválidos.</h5>
-                    <button type="submit" id="btt-go">Entrar</button>
-                    <a id="re-password" href="">Esqueci minha senha</a>
-                </form>
-            </div>-->
+
             <div id="box-message">
                 <div class="col-lg-12 col-md-12">
                     <h1 id="txt-main" class="h-message"></h1>
                     <h2 id="txt-second" class="h-message"></h2>
-                    <a href="index.jsp" id="btn-redirect"><button class="btn">Continuar</button></a>
+                    <a href="index.jsp" id="btn-redirect"><button class="btn">CONTINUAR</button></a>
                     <button id="btt-ok" class="btn">OK</button>
                 </div>
             </div>               

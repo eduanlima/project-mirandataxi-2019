@@ -23,7 +23,7 @@
         <div id="page">
             <%@ include file="header.jsp"%>
             <div id="galeria"> 
-                <a id="prev" href="#"></a>
+                
                 <div class="gallery" id="slides">                                
                     <ul id="slideMaster">
                         <li class="info-class slide">
@@ -82,7 +82,12 @@
                             </div>
                         </li>
                     </ul>                                   
-                </div>                        
+                </div> 
+                <div id="div-nav">
+                    <a id="prev" href="#"></a>
+                    <div id="div-space-nav"></div>
+                    <a id="next" href="#"></a>
+                </div>
                 <!--MINIATURAS-->
                 <div id="mini-galeria">
                     <nav>
@@ -181,7 +186,7 @@
                         </ul>
                     </nav>
                 </div>
-                <a id="next" href="#"></a>
+                
             </div>
             <form class="form-btt-register" id="form-car">
                 <input type="hidden" id="txt-car-selected" name="txt-car" />
