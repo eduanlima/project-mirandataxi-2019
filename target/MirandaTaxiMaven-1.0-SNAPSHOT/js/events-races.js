@@ -329,7 +329,7 @@ $(document).ready(function(){
                             box += '<div class="md-line"><span class="md-title font18">Serviços Adicionais: </span></div>';
                             $(servico).each(function(i, service){
                                 var detalhe = service.addService.description;
-                                if(detalhe==="Cadeira para bebê."){
+                                if(detalhe==="Cadeira para bebê"){
                                     box += '<div class="md-line"><span class="md-title">'+service.addService.description+'</span><span class="md-content"></span></div>';
                                 }else{
                                     box += '<div class="md-line"><span class="md-title">'+service.addService.description+':</span><span class="md-content">'+service.details+'</span></div>';
