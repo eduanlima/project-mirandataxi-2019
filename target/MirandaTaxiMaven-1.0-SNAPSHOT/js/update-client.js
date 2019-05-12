@@ -154,7 +154,7 @@ $(document).ready(function(){
         form = "#up-password";
         
         psw = $('#current_psw').val();//pega a senha digitada
-        if(psw.length == 0){
+        if(psw.length === 0){
             mensagem("error", form, "Por favor informe sua senha");
         }else{
             $.ajax({

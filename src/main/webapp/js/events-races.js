@@ -306,7 +306,7 @@ $(document).ready(function(){
                         box += '<div class="md-line"><span class="md-title">Preço quilômetro: R$</span><span class="md-content">'+formatNumbers(info.classCar.priceKm,2)+'</span></div>';
                         box += '<div class="md-line"><span class="md-title">Quilômetros adicionais:</span><span class="md-content">'+formatNumbers(info.valueAddKm,3)+'km</span></div>';
                         box += '<div class="md-line"><span class="md-title">Quilômetros contratados:</span><span class="md-content">'+formatNumbers(info.kmCont,3)+'km</span></div>';
-                        box += '<div class="md-line"><span class="md-title">Horas contratados:</span><span class="md-content">'+info.hourCont+'</span></div>';
+                        box += '<div class="md-line"><span class="md-title">Horas contratadas:</span><span class="md-content">'+info.hourCont+'</span></div>';
                         box += '<div class="md-line"><span class="md-title">Nome do passageiro:</span><span class="md-content">'+info.namePassenger+'</span></div>';
                         box += '<br>';
                         
@@ -326,10 +326,10 @@ $(document).ready(function(){
                         servico = info.service.item;
                         //listar serviços extras se tiver
                         if(servico.length>0){
-                            box += '<div class="md-line"><span class="md-title font18">Serviços Adicionais</span></div>';
+                            box += '<div class="md-line"><span class="md-title font18">Serviços Adicionais: </span></div>';
                             $(servico).each(function(i, service){
                                 var detalhe = service.addService.description;
-                                if(detalhe==="Cadeira para bebê"){
+                                if(detalhe==="Cadeira para bebê."){
                                     box += '<div class="md-line"><span class="md-title">'+service.addService.description+'</span><span class="md-content"></span></div>';
                                 }else{
                                     box += '<div class="md-line"><span class="md-title">'+service.addService.description+':</span><span class="md-content">'+service.details+'</span></div>';

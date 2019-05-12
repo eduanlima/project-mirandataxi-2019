@@ -60,15 +60,23 @@
             vetInput[0].value = val[1]+", "+val[0];
             vetInput[1].value = val[2];
             vetInput[2].value = val[3];
-            
         }else if(val[4] === "undefined"){
             clearInput();
+            vetInput[0].value = "indefinido";
+            vetInput[1].value = "indefinido";
+            vetInput[2].value = "indefinido";
             document.getElementById("btt-next").disabled = true;
         }else if(val[4] !== "SP"){
             clearInput();
+            vetInput[0].value = "indefinido";
+            vetInput[1].value = "indefinido";
+            vetInput[2].value = "indefinido";
             document.getElementById("btt-next").disabled = true;
         }else{
             clearInput();
+            vetInput[0].value = "indefinido";
+            vetInput[1].value = "indefinido";
+            vetInput[2].value = "indefinido";
             document.getElementById("btt-next").disabled = true;
         }
 

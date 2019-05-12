@@ -67,7 +67,8 @@ var distance = 0, map, origin, destination,
     function callbackStart(response, status){
         var distance = 0;
         try{
-            if(response.originAddresses[0]!=="São Paulo, SP, Brasil"){
+            
+            if(response.destinationAddresses[0]!=="São Paulo, SP, Brasil"){
                 
                 if((txtStreetFrom.value !== txtStreetTo.value) || (txtNeighborFrom.value !== txtNeighborTo.value) || (txtCityFrom.value !== txtCityTo.value)){
                    
@@ -90,30 +91,43 @@ var distance = 0, map, origin, destination,
                 }
                   
             }else{
+                document.getElementById("txt-from-street").value = "";
+                document.getElementById("txt-from-neighbor").value = "";
+                document.getElementById("txt-from-city").value = "";
+                showMessageForm("Atenção", "Endereço de origem não encontrado. <br/>Insira o endereço com número.");
                 bttNext.disabled = true;
                 bttNext.style.backgroundColor = "#B5B5B5";
             }
             
         }catch(error){
-            alert("An error occurred: "+error);
+            document.getElementById("txt-from-street").value = "";
+            document.getElementById("txt-from-neighbor").value = "";
+            document.getElementById("txt-from-city").value = "";
+            showMessageForm("Atenção", "Endereço de origem não encontrado. <br/>Insira o endereço com número.");
+            bttNext.disabled = true;
+            bttNext.style.backgroundColor = "#B5B5B5";
         }
     }
     
     function callback (response, status) {
         var distanceCalc = 0;
         try{
+           
             if(response.destinationAddresses[0]!=="São Paulo, SP, Brasil"){
                 
                 if(response.originAddresses[0]!=="São Paulo, SP, Brasil"){
                     
                     if(response.originAddresses[0]!== response.destinationAddresses[0]){
                         
-                        distanceCalc = response.rows[0].elements[0].distance.value;
-                        document.getElementById("txt-total-km").value = distanceCalc / 1000;
-                        setRunKm();
+                        distanceCalc = response.rows[0].elements[0].distance.value  / 1000;
+                        
+                        if(distanceCalc !== Number(document.getElementById("txt-total-km").value)){
+                            document.getElementById("txt-total-km").value = distanceCalc;
+                            setRunKm();
 
-                        iframeMap.src = "https://www.google.com/maps/embed/v1/directions?key=AIzaSyAAuoodPmKSm1KfKc8RKsWKjY15Mdjqap8&origin="+encodeURI(response.originAddresses)+"&destination="+encodeURI(response.destinationAddresses);
-
+                            iframeMap.src = "https://www.google.com/maps/embed/v1/directions?key=AIzaSyAAuoodPmKSm1KfKc8RKsWKjY15Mdjqap8&origin="+encodeURI(response.originAddresses)+"&destination="+encodeURI(response.destinationAddresses);
+                        }
+                        
                         bttNext.disabled = false;
                         bttNext.style.backgroundColor = "#000000";
                    
@@ -134,7 +148,6 @@ var distance = 0, map, origin, destination,
                     document.getElementById("txt-from-street").value = "";
                     document.getElementById("txt-from-neighbor").value = "";
                     document.getElementById("txt-from-city").value = "";
-                    showMessageForm("Atenção", "Endereço de origem não encontrado. <br/>Insira o endereço com número.");
                     bttNext.disabled = true;
                     bttNext.style.backgroundColor = "#B5B5B5"; 
                 }
@@ -149,7 +162,12 @@ var distance = 0, map, origin, destination,
             }
            
         }catch(error){
-            alert("An error occurred: "+error);
+            document.getElementById("txt-to-street").value = "";
+            document.getElementById("txt-to-neighbor").value = "";
+            document.getElementById("txt-to-city").value = "";
+            showMessageForm("Atenção", "Endereço de destino não encontrado. <br/>Insira o endereço com número.");
+            bttNext.disabled = true;
+            bttNext.style.backgroundColor = "#B5B5B5";
         }
     } 
     
@@ -201,40 +219,45 @@ var distance = 0, map, origin, destination,
                 var destinationStart = txtStreetFrom.value + " - " + txtNeighborFrom.value + ", " + " " + txtCityFrom.value + " - SP, Brasil";
                 calculateDistanceStart("Rua Rocha, 23 - Bela Vista, São Paulo - SP, Brasil", destinationStart);  
         }
-
-        if((flagFrom === 0) && (flagTo === 0) && (radioTypeService[0].checked)){
-            calculateRoute(typeRoute);
-            
-        }else if(radioTypeService[1].checked){
-              var pointStart = sctTrip.value;
-                    
-                switch(pointStart){
-                    case "spgru":
-                        typeRoute = 1;
-                    break;
-
-                    case "grusp":
-                        typeRoute = 2;
-                    break;
-
-                    case "spcamp":
-                        typeRoute = 3;
-                    break;
-
-                    case "campsp":
-                        typeRoute = 4;
-                    break;
-               }
-               
-              if(((typeRoute === 1) || (typeRoute === 3)) && (flagFrom === 0)){
-                    calculateRoute(typeRoute);
-
-              }else if(((typeRoute === 2) || (typeRoute === 4)) && (flagTo === 0)){
-                    calculateRoute(typeRoute);     
-              }
-              
-        }  
         
+        if((txtStreetTo.value=="indefinido") || (txtCityTo.value=="indefinido") || (txtNeighborTo.value=="indefinido")){
+            document.getElementById("txt-to-street").value = "";
+            document.getElementById("txt-to-neighbor").value = "";
+            document.getElementById("txt-to-city").value = "";
+            showMessageForm("Atenção", "Endereço de destino não encontrado. <br/>Insira o endereço com número.");
+        }else{
+            if((flagFrom === 0) && (flagTo === 0) && (radioTypeService[0].checked)){
+                calculateRoute(typeRoute);
+
+            }else if(radioTypeService[1].checked){
+                  var pointStart = sctTrip.value;
+
+                    switch(pointStart){
+                        case "spgru":
+                            typeRoute = 1;
+                        break;
+
+                        case "grusp":
+                            typeRoute = 2;
+                        break;
+
+                        case "spcamp":
+                            typeRoute = 3;
+                        break;
+
+                        case "campsp":
+                            typeRoute = 4;
+                        break;
+                   }
+
+                  if(((typeRoute === 1) || (typeRoute === 3)) && (flagFrom === 0)){
+                        calculateRoute(typeRoute);
+
+                  }else if(((typeRoute === 2) || (typeRoute === 4)) && (flagTo === 0)){
+                        calculateRoute(typeRoute);     
+                  }
+            }
+        }     
     }
             
     function activeClick(){
@@ -242,15 +265,7 @@ var distance = 0, map, origin, destination,
         bttNext.style.backgroundColor = "#B5B5B5";
         divTypeService.click();
     }
-    /*
-    function validateStreetFrom(){
-        if((txtStreetTo.value !== "") && (txtNeighborFrom.value !== "") && (txtCityFrom.value !== "")){
-            bttNext.disabled = true;
-            bttNext.style.backgroundColor = "#B5B5B5";
-            divTypeService.click();
-        }
-    }
-    */
+
     function validateAddressFrom(){
         bttNext.disabled = true;
         bttNext.style.backgroundColor = "#B5B5B5";

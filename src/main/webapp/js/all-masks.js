@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('#up-phone-1').mask('(00)00000-0000');
     $('#up-phone-2').mask('(00)00000-0000');
     $('#up-phone-3').mask('(00)00000-0000');
-    $('#up_pass, #current_psw, #up_pass_conf').mask('00000000');
+    //$('#up_pass, #current_psw, #up_pass_conf').mask('00000000');
     
     /*Máscara página register-service*/
     //$('#txt-hours').mask('00:00');

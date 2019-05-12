@@ -47,7 +47,7 @@ $(document).ready(function(){
                 }
             });
         }else{
-            hLabelInfo.innerHTML = "Por favor, insira o seu endereço de e-mail.";
+            hLabelInfo.innerHTML = "Por favor, insira o seu e-mail.";
         }
     });
     

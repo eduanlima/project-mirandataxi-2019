@@ -52,16 +52,16 @@
             <div class="row nopadding">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <label for="up-pass-conf" class="lbl-standard">Senha Atual</label>
-                    <input type="password" autocomplete="off" name="current_psw" id="current_psw" class="form-control" placeholder="Digite a senha atual" />
+                    <input type="password" autocomplete="off" name="current_psw" id="current_psw" class="form-control" placeholder="Digite a senha atual" maxlength="8"/>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6" id="div-space-pass">
                     <label for="up-pass" class="lbl-standard">Nova Senha</label>
-                    <input type="password" autocomplete="off" id="up_pass" name="new_password" class="form-control field-psw" placeholder="Insira uma senha"/>
+                    <input type="password" autocomplete="off" id="up_pass" name="new_password" class="form-control field-psw" placeholder="Insira uma senha" maxlength="8"/>
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <label for="up-pass-conf" class="lbl-standard">Confirme sua senha</label>
-                    <input type="password" autocomplete="off" id="up_pass_conf" name="new_pass_again" class="form-control field-psw" placeholder="Digite novamente a senha" />
+                    <input type="password" autocomplete="off" id="up_pass_conf" name="new_pass_again" class="form-control field-psw" placeholder="Digite novamente a senha" maxlength="8"/>
                 </div>               
             </div>
             <div class="row nopadding">
